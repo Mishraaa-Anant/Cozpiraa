@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================
+       META & SEO
+  ===================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>CozPiraa Clinic | Multi-Speciality Healthcare in Virar West</title>
+  <meta name="description" content="CozPiraa Clinic – Your trusted multi-speciality healthcare partner in Virar West. Expert care in Dermatology, Hair Care, Pediatrics, Gynecology & General Medicine by Dr. Priyanka Rahul Patil (BAMS)." />
+  <meta name="keywords" content="CozPiraa Clinic, Virar West doctor, dermatology Virar, hair treatment Virar, pediatrics Virar, gynecology Virar, skin specialist Virar, PRP treatment, Global City clinic" />
+  <meta name="author" content="CozPiraa Clinic" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CozPiraa Clinic | Multi-Speciality Healthcare in Virar West" />
+  <meta property="og:description" content="Compassionate, evidence-based healthcare for Skin, Hair, Pediatrics, Women's Health & General Wellness in Virar West." />
+  <meta property="og:url" content="https://cozpiraaclinic.com" />
+  <meta property="og:site_name" content="CozPiraa Clinic" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CozPiraa Clinic | Virar West" />
+  <meta name="twitter:description" content="Expert multi-speciality healthcare in Global City, Virar West." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://cozpiraaclinic.com" />
+
+  <!-- Favicon (inline SVG as data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230F766E' width='100' height='100' rx='20'/><text y='.9em' font-size='80' x='10'>🏥</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS – Animate On Scroll -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="light-mode" id="top">
+
+  <!-- =====================================================
+       LOADING SCREEN
+  ===================================================== -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+        <span class="loader-brand">CozPiraa</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-text">Preparing your healthcare experience…</p>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       CUSTOM CURSOR
+  ===================================================== -->
+  <div id="cursor" class="custom-cursor" aria-hidden="true"></div>
+  <div id="cursorDot" class="custom-cursor-dot" aria-hidden="true"></div>
+
+  <!-- =====================================================
+       SCROLL PROGRESS BAR
+  ===================================================== -->
+  <div id="scrollProgress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- =====================================================
+       DARK MODE TOGGLE
+  ===================================================== -->
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <i class="fa-solid fa-moon" id="themeIcon"></i>
+  </button>
+
+  <!-- =====================================================
+       NAVBAR
+  ===================================================== -->
+  <header id="navbar" class="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <!-- Logo -->
+      <a href="#top" class="nav-logo" aria-label="CozPiraa Clinic Home">
+        <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <div class="logo-text">
+          <span class="logo-brand">CozPiraa</span>
+          <span class="logo-sub">Clinic</span>
+        </div>
+      </a>
+
+      <!-- Menu Links -->
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"         class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#about"        class="nav-link" data-section="about">About</a></li>
+        <li><a href="#services"     class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#treatments"   class="nav-link" data-section="treatments">Treatments</a></li>
+        <li><a href="#doctor"       class="nav-link" data-section="doctor">Doctor</a></li>
+        <li><a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a></li>
+        <li><a href="#health-tips"  class="nav-link" data-section="health-tips">Health Tips</a></li>
+        <li><a href="#faq"          class="nav-link" data-section="faq">FAQ</a></li>
+        <li><a href="#contact"      class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-ripple" id="navCta">
+          <i class="fa-solid fa-calendar-check"></i> Book Appointment
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+  <!-- =====================================================
+       HERO SECTION
+  ===================================================== -->
+  <section id="home" class="hero" aria-labelledby="heroHeadline">
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+    <!-- Background blobs -->
+    <div class="hero-blob blob-1" aria-hidden="true"></div>
+    <div class="hero-blob blob-2" aria-hidden="true"></div>
+    <div class="hero-blob blob-3" aria-hidden="true"></div>
+
+    <div class="container hero-grid">
+      <!-- Left Content -->
+      <div class="hero-content">
+        <span class="hero-badge">
+          <i class="fa-solid fa-shield-halved"></i> Trusted Healthcare Since 2015
+        </span>
+
+        <h1 id="heroHeadline" class="hero-headline">
+          Your Trusted <span class="gradient-text">Multi-Speciality</span><br>
+          Healthcare Partner in<br>
+          <span class="typed-container"><span id="typedText" class="typed-text"></span><span class="typed-cursor">|</span></span>
+        </h1>
+
+        <p class="hero-subtext">
+          Comprehensive healthcare for Skin, Hair, Pediatrics, Women's Health, and General Wellness —
+          all under one roof with compassionate and personalised care. Call us to book your appointment.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary btn-lg btn-ripple" id="heroBookBtn">
+            <i class="fa-solid fa-calendar-check"></i> Book Appointment
+          </a>
+          <a href="tel:+919876543210" class="btn btn-outline btn-lg btn-ripple" id="heroCallBtn">
+            <i class="fa-solid fa-phone-volume"></i> Call Now
+          </a>
+        </div>
+
+        <!-- Floating Stats Cards -->
+        <div class="hero-stats" aria-label="Clinic statistics">
+          <div class="stat-card glass-card">
+            <span class="stat-icon">⭐</span>
+            <div>
+              <strong class="counter" data-target="1000">0</strong><strong>+</strong>
+              <p>Happy Patients</p>
+            </div>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-icon">🏥</span>
+            <div>
+              <strong class="counter" data-target="100">0</strong><strong>+</strong>
+              <p>Treatments</p>
+            </div>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-icon">👩‍⚕️</span>
+            <div>
+              <strong class="counter" data-target="9">0</strong><strong>+</strong>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right – Doctor Image -->
+      <div class="hero-image-wrap">
+        <div class="hero-img-glow" aria-hidden="true"></div>
+        <div class="hero-img-ring" aria-hidden="true"></div>
+        <img
+          src="assets/images/doctor.png"
+          alt="Dr. Priyanka Rahul Patil – CozPiraa Clinic Doctor"
+          class="hero-doctor-img"
+          loading="eager"
+          width="520"
+          height="560"
+        />
+        <!-- Floating badges on image -->
+        <div class="img-badge badge-top-right glass-card">
+          <i class="fa-solid fa-star" style="color:#F59E0B;"></i> 4.9 Rating
+        </div>
+        <div class="img-badge badge-bottom-left glass-card">
+          <i class="fa-solid fa-user-doctor"></i> BAMS · 9+ Yrs
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,50 L1440,90 L0,90 Z" fill="var(--bg)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       ABOUT SECTION
+  ===================================================== -->
+  <section id="about" class="section about" aria-labelledby="aboutTitle">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Image Side -->
+        <div class="about-img-wrap" data-aos="fade-right" data-aos-duration="800">
+          <div class="about-img-bg" aria-hidden="true"></div>
+          <img
+            src="assets/images/clinic.png"
+            alt="CozPiraa Clinic interior – modern medical facility in Virar West"
+            class="about-img"
+            loading="lazy"
+            width="540"
+            height="440"
+          />
+          <div class="about-img-badge glass-card" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fa-solid fa-award" style="color:#0F766E;font-size:1.6rem;"></i>
+            <div>
+              <strong>Award-Winning</strong>
+              <span>Healthcare 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Side -->
+        <div class="about-content" data-aos="fade-left" data-aos-duration="800">
+          <span class="section-badge">Our Story</span>
+          <h2 id="aboutTitle" class="section-title">About <span class="gradient-text">CozPiraa</span> Clinic</h2>
+          <p class="section-desc">
+            CozPiraa Clinic is a modern multi-speciality healthcare clinic located in
+            <strong>Global City, Virar West</strong>. We provide personalized, compassionate,
+            and evidence-based healthcare for patients of all age groups.
+          </p>
+          <p class="section-desc" style="margin-top:1rem;">
+            Founded with the vision of making premium healthcare accessible to every family,
+            our clinic combines the warmth of personal attention with the precision of modern medicine.
+            Led by <strong>Dr. Priyanka Rahul Patil (BAMS)</strong>, our team is committed to your
+            long-term well-being — not just symptom relief.
+          </p>
+
+          <!-- Feature bullets -->
+          <ul class="about-features">
+            <li><i class="fa-solid fa-circle-check"></i> Evidence-based treatment protocols</li>
+            <li><i class="fa-solid fa-circle-check"></i> Personalised care for every patient</li>
+            <li><i class="fa-solid fa-circle-check"></i> State-of-the-art medical equipment</li>
+            <li><i class="fa-solid fa-circle-check"></i> Transparent & affordable pricing</li>
+          </ul>
+
+          <!-- Animated Counters -->
+          <div class="about-counters" aria-label="Clinic statistics">
+            <div class="about-counter-item">
+              <span class="counter-num counter" data-target="1000">0</span><span class="counter-suffix">+</span>
+              <span class="counter-label">Happy Patients</span>
+            </div>
+            <div class="about-counter-item">
+              <span class="counter-num counter" data-target="100">0</span><span class="counter-suffix">+</span>
+              <span class="counter-label">Treatments</span>
+            </div>
+            <div class="about-counter-item">
+              <span class="counter-num counter" data-target="9">0</span><span class="counter-suffix">+</span>
+              <span class="counter-label">Years Exp.</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary btn-ripple" style="margin-top:2rem;">
+            <i class="fa-solid fa-calendar-check"></i> Book a Visit
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-alt" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C480,10 960,70 1440,30 L1440,80 L0,80 Z" fill="var(--surface)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       WHY CHOOSE US
+  ===================================================== -->
+  <section id="why" class="section why-us" aria-labelledby="whyTitle" style="background:var(--surface);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Our Promise</span>
+        <h2 id="whyTitle" class="section-title">Why Choose <span class="gradient-text">CozPiraa?</span></h2>
+        <p class="section-subtitle">We go beyond treatment — we build lifelong relationships of trust.</p>
+      </div>
+
+      <div class="why-grid">
+        <!-- Card 1 -->
+        <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon-wrap" style="--icon-color:#0F766E;">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+          <h3>Experienced Doctor</h3>
+          <p>Dr. Priyanka Rahul Patil brings 9+ years of expertise across multiple medical specialties.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="why-icon-wrap" style="--icon-color:#14B8A6;">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <h3>Personalised Care</h3>
+          <p>Every patient receives a tailored treatment plan designed for their unique health needs.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-icon-wrap" style="--icon-color:#22C55E;">
+            <i class="fa-solid fa-flask-vial"></i>
+          </div>
+          <h3>Modern Treatments</h3>
+          <p>We use the latest evidence-based protocols and modern equipment for superior outcomes.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="why-icon-wrap" style="--icon-color:#0F766E;">
+            <i class="fa-solid fa-tag"></i>
+          </div>
+          <h3>Affordable Consultation</h3>
+          <p>Premium healthcare doesn't have to break the bank. Transparent, fair pricing always.</p>
+        </div>
+        <!-- Card 5 -->
+        <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-icon-wrap" style="--icon-color:#14B8A6;">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3>Comfortable Clinic</h3>
+          <p>A calm, hygienic, and welcoming environment designed to put you at complete ease.</p>
+        </div>
+        <!-- Card 6 -->
+        <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="why-icon-wrap" style="--icon-color:#22C55E;">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h3>Friendly Staff</h3>
+          <p>Our compassionate team ensures every visit is smooth, respectful, and reassuring.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C360,70 1080,0 1440,50 L1440,80 L0,80 Z" fill="var(--bg)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SERVICES
+  ===================================================== -->
+  <section id="services" class="section services" aria-labelledby="servicesTitle">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">What We Offer</span>
+        <h2 id="servicesTitle" class="section-title">Our <span class="gradient-text">Specialities</span></h2>
+        <p class="section-subtitle">Comprehensive care across five core medical disciplines under one roof.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Dermatology -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card-header" style="--card-color:#0F766E;">
+            <div class="service-icon"><i class="fa-solid fa-face-smile-wink"></i></div>
+            <h3>Dermatology</h3>
+          </div>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-chevron-right"></i> Acne &amp; Pimples</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Pigmentation</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Skin Allergy</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Psoriasis</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Eczema</li>
+          </ul>
+          <a href="#contact" class="service-cta">Book Consultation <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Hair Care -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-card-header" style="--card-color:#14B8A6;">
+            <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+            <h3>Hair Care</h3>
+          </div>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-chevron-right"></i> Hair Fall Treatment</li>
+            <li><i class="fa-solid fa-chevron-right"></i> PRP Therapy</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Hair Regrowth</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Dandruff Care</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Alopecia</li>
+          </ul>
+          <a href="#contact" class="service-cta">Book Consultation <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Pediatrics -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card-header" style="--card-color:#22C55E;">
+            <div class="service-icon"><i class="fa-solid fa-baby"></i></div>
+            <h3>Pediatrics</h3>
+          </div>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-chevron-right"></i> Vaccination</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Child Care</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Nutrition Guidance</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Fever &amp; Infections</li>
+          </ul>
+          <a href="#contact" class="service-cta">Book Consultation <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Gynecology -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-card-header" style="--card-color:#0F766E;">
+            <div class="service-icon"><i class="fa-solid fa-venus"></i></div>
+            <h3>Gynecology</h3>
+          </div>
+          <ul class="service-list">
+            <li><i class="fa-solid fa-chevron-right"></i> Pregnancy Care</li>
+            <li><i class="fa-solid fa-chevron-right"></i> PCOS Management</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Women's Wellness</li>
+          </ul>
+          <a href="#contact" class="service-cta">Book Consultation <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- General Consultation -->
+        <div class="service-card service-card--wide" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card-header" style="--card-color:#14B8A6;">
+            <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
+            <h3>General Consultation</h3>
+          </div>
+          <ul class="service-list service-list--cols">
+            <li><i class="fa-solid fa-chevron-right"></i> Fever</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Acidity</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Headache</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Diabetes Care</li>
+            <li><i class="fa-solid fa-chevron-right"></i> Blood Pressure</li>
+            <li><i class="fa-solid fa-chevron-right"></i> General Check-Up</li>
+          </ul>
+          <a href="#contact" class="service-cta">Book Consultation <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-alt" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,50 C480,10 960,70 1440,20 L1440,80 L0,80 Z" fill="var(--surface)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FEATURED TREATMENTS
+  ===================================================== -->
+  <section id="treatments" class="section treatments" aria-labelledby="treatmentsTitle" style="background:var(--surface);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Signature Procedures</span>
+        <h2 id="treatmentsTitle" class="section-title">Featured <span class="gradient-text">Treatments</span></h2>
+        <p class="section-subtitle">Advanced, result-oriented treatments delivered with clinical precision.</p>
+      </div>
+
+      <div class="treatments-grid">
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="treatment-icon" style="--t-color:#0F766E;"><i class="fa-solid fa-face-kiss-wink-heart"></i></div>
+          <h3>Acne Scar Treatment</h3>
+          <p>Advanced scar reduction with multi-modality approach for clear, radiant skin.</p>
+          <span class="treatment-tag">Dermatology</span>
+        </div>
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="treatment-icon" style="--t-color:#14B8A6;"><i class="fa-solid fa-wind"></i></div>
+          <h3>Hair Fall Treatment</h3>
+          <p>Comprehensive diagnosis and targeted therapies to combat hair thinning and loss.</p>
+          <span class="treatment-tag">Hair Care</span>
+        </div>
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="treatment-icon" style="--t-color:#22C55E;"><i class="fa-solid fa-syringe"></i></div>
+          <h3>PRP Therapy</h3>
+          <p>Platelet-Rich Plasma therapy for hair regrowth and skin rejuvenation.</p>
+          <span class="treatment-tag">Premium</span>
+        </div>
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="treatment-icon" style="--t-color:#0F766E;"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Laser Treatment</h3>
+          <p>Precise laser-based procedures for pigmentation, hair removal & skin resurfacing.</p>
+          <span class="treatment-tag">Dermatology</span>
+        </div>
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="treatment-icon" style="--t-color:#14B8A6;"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Hair Regrowth</h3>
+          <p>Stimulate dormant follicles and restore natural hair density with proven protocols.</p>
+          <span class="treatment-tag">Hair Care</span>
+        </div>
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="treatment-icon" style="--t-color:#22C55E;"><i class="fa-solid fa-sun"></i></div>
+          <h3>Pigmentation</h3>
+          <p>Treat melasma, dark spots & uneven tone with targeted depigmentation therapies.</p>
+          <span class="treatment-tag">Dermatology</span>
+        </div>
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="treatment-icon" style="--t-color:#0F766E;"><i class="fa-solid fa-venus"></i></div>
+          <h3>Women's Health</h3>
+          <p>Holistic women's wellness – PCOS, prenatal care, hormonal balance & more.</p>
+          <span class="treatment-tag">Gynecology</span>
+        </div>
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="treatment-icon" style="--t-color:#14B8A6;"><i class="fa-solid fa-baby"></i></div>
+          <h3>Child Care</h3>
+          <p>Comprehensive paediatric care from newborn to adolescence, with love &amp; expertise.</p>
+          <span class="treatment-tag">Pediatrics</span>
+        </div>
+        <div class="treatment-card tilt-card" data-aos="fade-up" data-aos-delay="450">
+          <div class="treatment-icon" style="--t-color:#22C55E;"><i class="fa-solid fa-stethoscope"></i></div>
+          <h3>General Physician</h3>
+          <p>Rapid diagnosis and effective management of common illnesses and chronic conditions.</p>
+          <span class="treatment-tag">General</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,50 L1440,80 L0,80 Z" fill="var(--bg)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       DOCTOR SECTION
+  ===================================================== -->
+  <section id="doctor" class="section doctor" aria-labelledby="doctorTitle">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Meet Our Expert</span>
+        <h2 id="doctorTitle" class="section-title">Our <span class="gradient-text">Doctor</span></h2>
+      </div>
+
+      <div class="doctor-card" data-aos="zoom-in" data-aos-duration="900">
+        <div class="doctor-img-wrap">
+          <div class="doctor-img-ring" aria-hidden="true"></div>
+          <img
+            src="assets/images/doctor.png"
+            alt="Dr. Priyanka Rahul Patil – BAMS, CozPiraa Clinic Virar West"
+            class="doctor-img"
+            loading="lazy"
+            width="400"
+            height="440"
+          />
+          <!-- Experience badge -->
+          <div class="doctor-exp-badge glass-card">
+            <i class="fa-solid fa-medal" style="color:#F59E0B;font-size:1.4rem;"></i>
+            <div><strong>9+</strong><span>Years Exp.</span></div>
+          </div>
+        </div>
+
+        <div class="doctor-info">
+          <span class="section-badge">Your Healthcare Expert</span>
+          <h3 class="doctor-name">Dr. Priyanka Rahul Patil</h3>
+          <p class="doctor-qual"><i class="fa-solid fa-graduation-cap"></i> BAMS &nbsp;|&nbsp; Multi-Speciality Practitioner</p>
+          <div class="doctor-specialties">
+            <span class="specialty-tag"><i class="fa-solid fa-face-smile-wink"></i> Dermatology</span>
+            <span class="specialty-tag"><i class="fa-solid fa-scissors"></i> Trichology</span>
+            <span class="specialty-tag"><i class="fa-solid fa-baby"></i> Pediatrics</span>
+            <span class="specialty-tag"><i class="fa-solid fa-venus"></i> Gynecology</span>
+            <span class="specialty-tag"><i class="fa-solid fa-stethoscope"></i> General Medicine</span>
+          </div>
+          <p class="doctor-desc">
+            Dr. Priyanka Rahul Patil is a dedicated Ayurvedic and integrative medicine practitioner with over
+            9 years of experience. She founded CozPiraa Clinic with the mission of bringing holistic,
+            personalised, and evidence-based healthcare to families in Virar West and beyond.
+            Known for her empathetic approach, she takes time to truly understand each patient's needs
+            and designs treatment plans that heal — not just treat.
+          </p>
+          <div class="doctor-btns">
+            <a href="#contact" class="btn btn-primary btn-ripple">
+              <i class="fa-solid fa-calendar-check"></i> Book Consultation
+            </a>
+            <a href="#contact" class="btn btn-outline btn-ripple">
+              <i class="fa-solid fa-circle-info"></i> View Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-alt" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,20 C480,70 960,10 1440,60 L1440,80 L0,80 Z" fill="var(--surface)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       PATIENT JOURNEY
+  ===================================================== -->
+  <section id="journey" class="section journey" aria-labelledby="journeyTitle" style="background:var(--surface);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Seamless Process</span>
+        <h2 id="journeyTitle" class="section-title">Your Patient <span class="gradient-text">Journey</span></h2>
+        <p class="section-subtitle">From booking to recovery — we're with you every step of the way.</p>
+      </div>
+
+      <div class="journey-timeline" role="list">
+        <div class="journey-step" data-aos="fade-up" data-aos-delay="100" role="listitem">
+          <div class="journey-step-num">01</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <h3>Book Appointment</h3>
+          <p>Call us directly at <strong>+91 98765 43210</strong> or WhatsApp to schedule your visit at your preferred time.</p>
+        </div>
+        <div class="journey-connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+        <div class="journey-step" data-aos="fade-up" data-aos-delay="200" role="listitem">
+          <div class="journey-step-num">02</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>Consultation</h3>
+          <p>A thorough one-on-one consultation with Dr. Priyanka to understand your concerns deeply.</p>
+        </div>
+        <div class="journey-connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+        <div class="journey-step" data-aos="fade-up" data-aos-delay="300" role="listitem">
+          <div class="journey-step-num">03</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          <h3>Diagnosis</h3>
+          <p>Accurate diagnosis using clinical assessment, investigations, and advanced diagnostic tools.</p>
+        </div>
+        <div class="journey-connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+        <div class="journey-step" data-aos="fade-up" data-aos-delay="400" role="listitem">
+          <div class="journey-step-num">04</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-flask-vial"></i></div>
+          <h3>Treatment</h3>
+          <p>A personalised, evidence-based treatment plan designed specifically for you.</p>
+        </div>
+        <div class="journey-connector" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+
+        <div class="journey-step" data-aos="fade-up" data-aos-delay="500" role="listitem">
+          <div class="journey-step-num">05</div>
+          <div class="journey-step-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>Recovery</h3>
+          <p>Continuous follow-up and support to ensure complete healing and lasting wellness.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,50 C360,10 1080,70 1440,20 L1440,80 L0,80 Z" fill="var(--bg)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       TESTIMONIALS
+  ===================================================== -->
+  <section id="testimonials" class="section testimonials" aria-labelledby="testimonialsTitle">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Patient Stories</span>
+        <h2 id="testimonialsTitle" class="section-title">What Our <span class="gradient-text">Patients Say</span></h2>
+        <p class="section-subtitle">Real experiences from the families we've had the honour to care for.</p>
+      </div>
+
+      <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="testi-stars" aria-label="5 stars rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testi-text">"Dr. Priyanka is absolutely wonderful! She listened to all my concerns patiently and my acne cleared up completely within 2 months. Highly recommended to everyone in Virar!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#0F766E,#14B8A6);">P</div>
+                <div>
+                  <strong>Priya Sharma</strong>
+                  <span>Skin Patient · Virar West</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="testi-stars" aria-label="5 stars rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testi-text">"My daughter had recurring fever issues and Dr. Priyanka's gentle approach made my child feel so comfortable. The diagnosis was spot on and she recovered quickly. Wonderful doctor!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#14B8A6,#22C55E);">R</div>
+                <div>
+                  <strong>Rekha Mehta</strong>
+                  <span>Pediatric Patient's Mother · Nalasopara</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="testi-stars" aria-label="5 stars rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testi-text">"I suffered from severe hair fall for 2 years. After PRP therapy at CozPiraa, I can see significant regrowth. The clinic is clean, staff is friendly, and the treatment is very effective!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#22C55E,#0F766E);">A</div>
+                <div>
+                  <strong>Amit Patel</strong>
+                  <span>Hair Treatment Patient · Global City</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="testi-stars" aria-label="5 stars rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testi-text">"CozPiraa Clinic helped me manage my PCOS symptoms holistically. Dr. Priyanka's integrative approach combining ayurveda with modern medicine is truly remarkable and life-changing."</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#0F766E,#22C55E);">S</div>
+                <div>
+                  <strong>Sneha Kapoor</strong>
+                  <span>Gynecology Patient · Virar West</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="testi-stars" aria-label="5 stars rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testi-text">"Best clinic in Virar West! Affordable, hygienic, and extremely professional. My diabetes is now well-controlled thanks to the personalized care plan from Dr. Priyanka. God bless her!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#14B8A6,#0F766E);">M</div>
+                <div>
+                  <strong>Mahesh Gupta</strong>
+                  <span>Diabetes Patient · Virar East</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="swiper-slide">
+            <div class="testi-card glass-card">
+              <div class="testi-stars" aria-label="5 stars rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="testi-text">"I've been bringing my family to CozPiraa for 3 years. Dr. Priyanka treats every patient like family. The pigmentation treatment worked wonders for me — I feel confident again!"</p>
+              <div class="testi-author">
+                <div class="testi-avatar" style="background:linear-gradient(135deg,#22C55E,#14B8A6);">N</div>
+                <div>
+                  <strong>Nisha Verma</strong>
+                  <span>Dermatology Patient · Global City</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination" id="testiPagination"></div>
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next" id="testiNext"></div>
+        <div class="swiper-button-prev" id="testiPrev"></div>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-alt" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,30 C480,80 960,0 1440,50 L1440,80 L0,80 Z" fill="var(--surface)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FAQ
+  ===================================================== -->
+  <section id="faq" class="section faq" aria-labelledby="faqTitle" style="background:var(--surface);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Got Questions?</span>
+        <h2 id="faqTitle" class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-subtitle">Everything you need to know before your visit.</p>
+      </div>
+
+      <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="faq-item" id="faq1">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq1-answer">
+            <span>What are the clinic timings?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" id="faq1-answer" role="region">
+            <p>CozPiraa Clinic is open <strong>Monday to Saturday, 10:00 AM – 8:00 PM</strong>. We are closed on Sundays and public holidays. For emergency guidance, please call us directly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq2">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq2-answer">
+            <span>Do I need an appointment or can I walk in?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" id="faq2-answer" role="region">
+            <p>Appointments at CozPiraa Clinic are accepted <strong>exclusively through phone calls</strong>. Simply call us at <strong>+91 98765 43210</strong> (Monday–Saturday, 10 AM–8 PM) to schedule your visit. This ensures personalised consultation and efficient scheduling for every patient. Walk-ins are welcome subject to availability.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq3">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq3-answer">
+            <span>What treatments are available at CozPiraa Clinic?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" id="faq3-answer" role="region">
+            <p>We offer 100+ treatments across Dermatology, Hair Care (including PRP), Pediatrics, Gynecology, and General Medicine. This includes acne treatment, pigmentation, hair regrowth, PCOS management, child vaccinations, diabetes care, and much more.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq4">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq4-answer">
+            <span>Is PRP therapy safe and effective for hair fall?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" id="faq4-answer" role="region">
+            <p>Yes! PRP (Platelet-Rich Plasma) therapy is a <strong>scientifically proven, minimally invasive</strong> procedure that uses your own blood's growth factors to stimulate hair follicles. It is safe, with minimal side effects, and most patients see noticeable improvement within 3-6 months of treatment.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq5">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq5-answer">
+            <span>Where is CozPiraa Clinic located?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" id="faq5-answer" role="region">
+            <p>We are located at <strong>Shop No. 32, Agarwal Lifestyle Avenue, C-3, Opp. Poonam Vista, Global City, Virar West, Maharashtra</strong>. We are easily accessible by road and public transport from Virar, Vasai, Nalasopara, and nearby areas.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq6">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq6-answer">
+            <span>Are the consultation charges affordable?</span>
+            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <div class="faq-answer" id="faq6-answer" role="region">
+            <p>Absolutely. We believe in transparent, fair, and affordable pricing. Our consultation charges are very reasonable, and we never recommend unnecessary investigations or procedures. Our goal is your health — not just revenue.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C360,10 1080,80 1440,30 L1440,80 L0,80 Z" fill="var(--bg)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       YOUTUBE HEALTH TIPS SECTION
+  ===================================================== -->
+  <section id="health-tips" class="section yt-section" aria-labelledby="ytTitle">
+    <!-- Animated background blobs -->
+    <div class="yt-blob yt-blob-1" aria-hidden="true"></div>
+    <div class="yt-blob yt-blob-2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge"><i class="fa-brands fa-youtube" style="color:#FF0000;"></i> Expert Video Tips</span>
+        <h2 id="ytTitle" class="section-title">
+          🎥 Health Tips by <span class="gradient-text">Dr. Priyanka Patil</span>
+        </h2>
+        <p class="section-subtitle">
+          Watch expert dermatology tips on skin care, hair care, acne treatment, pigmentation,
+          anti-aging, and overall skin wellness — directly from Dr. Priyanka Patil.
+        </p>
+      </div>
+
+      <!-- YouTube Shorts Grid -->
+      <div class="yt-grid" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Short 1 – Skin Care -->
+        <div class="yt-card glass-card">
+          <div class="yt-embed-wrap">
+            <!--
+              FACADE PATTERN: No iframe is loaded until the user clicks.
+              This prevents YouTube from setting tracking cookies pre-interaction,
+              eliminates 500+ KB of blocked JS, and scores higher on Lighthouse.
+              A sandboxed iframe with autoplay is injected on click by main.js.
+            -->
+            <div
+              class="yt-facade"
+              data-vid="0dYGsj7kNzU"
+              role="button"
+              tabindex="0"
+              aria-label="Play: Skin Care Tips by Dr. Priyanka Patil">
+              <!-- Skeleton shimmer – visible until thumbnail loads -->
+              <div class="yt-skeleton" aria-hidden="true"></div>
+              <!-- Thumbnail – lazy loaded by IntersectionObserver -->
+              <img
+                class="yt-thumbnail"
+                src=""
+                data-src="https://img.youtube.com/vi/0dYGsj7kNzU/hqdefault.jpg"
+                alt="Skin Care Tips – Dr. Priyanka Patil thumbnail"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="360"
+              />
+              <!-- Play button overlay -->
+              <div class="yt-play-overlay" aria-hidden="true">
+                <div class="yt-play-btn">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+                <span class="yt-play-label">Click to Play</span>
+              </div>
+            </div>
+          </div>
+          <div class="yt-card-body">
+            <span class="yt-tag"><i class="fa-solid fa-face-smile-wink"></i> Skin Care</span>
+            <a
+              href="https://www.youtube.com/shorts/0dYGsj7kNzU"
+              class="btn btn-yt btn-ripple"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch skin care tip on YouTube">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </div>
+
+        <!-- Short 2 – Hair Care -->
+        <div class="yt-card glass-card">
+          <div class="yt-embed-wrap">
+            <div
+              class="yt-facade"
+              data-vid="_eL1jnUD-ig"
+              role="button"
+              tabindex="0"
+              aria-label="Play: Hair Care Tips by Dr. Priyanka Patil">
+              <div class="yt-skeleton" aria-hidden="true"></div>
+              <img
+                class="yt-thumbnail"
+                src=""
+                data-src="https://img.youtube.com/vi/_eL1jnUD-ig/hqdefault.jpg"
+                alt="Hair Care Tips – Dr. Priyanka Patil thumbnail"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="360"
+              />
+              <div class="yt-play-overlay" aria-hidden="true">
+                <div class="yt-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="yt-play-label">Click to Play</span>
+              </div>
+            </div>
+          </div>
+          <div class="yt-card-body">
+            <span class="yt-tag"><i class="fa-solid fa-scissors"></i> Hair Care</span>
+            <a
+              href="https://www.youtube.com/shorts/_eL1jnUD-ig"
+              class="btn btn-yt btn-ripple"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch hair care tip on YouTube">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </div>
+
+        <!-- Short 3 – Pigmentation -->
+        <div class="yt-card glass-card">
+          <div class="yt-embed-wrap">
+            <div
+              class="yt-facade"
+              data-vid="Fe51CiqLDBk"
+              role="button"
+              tabindex="0"
+              aria-label="Play: Acne &amp; Pigmentation Tips by Dr. Priyanka Patil">
+              <div class="yt-skeleton" aria-hidden="true"></div>
+              <img
+                class="yt-thumbnail"
+                src=""
+                data-src="https://img.youtube.com/vi/Fe51CiqLDBk/hqdefault.jpg"
+                alt="Pigmentation Tips – Dr. Priyanka Patil thumbnail"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="360"
+              />
+              <div class="yt-play-overlay" aria-hidden="true">
+                <div class="yt-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="yt-play-label">Click to Play</span>
+              </div>
+            </div>
+          </div>
+          <div class="yt-card-body">
+            <span class="yt-tag"><i class="fa-solid fa-sun"></i> Pigmentation</span>
+            <a
+              href="https://www.youtube.com/shorts/Fe51CiqLDBk"
+              class="btn btn-yt btn-ripple"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch pigmentation tip on YouTube">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </div>
+
+        <!-- Short 4 – Wellness -->
+        <div class="yt-card glass-card">
+          <div class="yt-embed-wrap">
+            <div
+              class="yt-facade"
+              data-vid="0LRxCV-AUt0"
+              role="button"
+              tabindex="0"
+              aria-label="Play: Anti-Aging &amp; Wellness Tips by Dr. Priyanka Patil">
+              <div class="yt-skeleton" aria-hidden="true"></div>
+              <img
+                class="yt-thumbnail"
+                src=""
+                data-src="https://img.youtube.com/vi/0LRxCV-AUt0/hqdefault.jpg"
+                alt="Wellness Tips – Dr. Priyanka Patil thumbnail"
+                loading="lazy"
+                decoding="async"
+                width="480"
+                height="360"
+              />
+              <div class="yt-play-overlay" aria-hidden="true">
+                <div class="yt-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="yt-play-label">Click to Play</span>
+              </div>
+            </div>
+          </div>
+          <div class="yt-card-body">
+            <span class="yt-tag"><i class="fa-solid fa-heart-pulse"></i> Wellness</span>
+            <a
+              href="https://www.youtube.com/shorts/0LRxCV-AUt0"
+              class="btn btn-yt btn-ripple"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch wellness tip on YouTube">
+              <i class="fa-brands fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /.yt-grid -->
+
+      <!-- Subscribe CTA -->
+      <div class="yt-subscribe-cta" data-aos="fade-up" data-aos-delay="200">
+        <a
+          href="https://www.youtube.com/@cozpiraaclinic"
+          class="btn btn-yt-subscribe btn-ripple"
+          target="_blank"
+          rel="noopener noreferrer">
+          <i class="fa-brands fa-youtube"></i> Subscribe to Our Channel
+        </a>
+      </div>
+    </div>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-alt" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,50 L1440,80 L0,80 Z" fill="var(--surface)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CONTACT — NO FORM (Phone only)
+  ===================================================== -->
+  <section id="contact" class="section contact-new" aria-labelledby="contactTitle" style="background:var(--surface);">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Visit Us</span>
+        <h2 id="contactTitle" class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">We're always happy to see you. Find us in Global City, Virar West.</p>
+      </div>
+
+      <!-- Phone-only notice banner -->
+      <div class="appt-notice" data-aos="fade-up" data-aos-delay="50">
+        <i class="fa-solid fa-circle-info appt-notice-icon"></i>
+        <p>
+          <strong>Appointments are accepted exclusively through phone calls</strong> to ensure
+          personalised consultation and efficient scheduling. Please call us to book your slot.
+        </p>
+      </div>
+
+      <div class="contact-new-grid">
+
+        <!-- Left: Details + CTAs -->
+        <div class="contact-new-left" data-aos="fade-right" data-aos-duration="800">
+
+          <div class="contact-info-cards">
+            <!-- Address -->
+            <div class="cinfo-card glass-card">
+              <div class="cinfo-icon" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark));">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="cinfo-text">
+                <h4>Our Address</h4>
+                <address>
+                  Shop No. 32, Agarwal Lifestyle Avenue,<br>
+                  C-3, Opp. Poonam Vista, Global City,<br>
+                  Virar West, Maharashtra
+                </address>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="cinfo-card glass-card">
+              <div class="cinfo-icon" style="background:linear-gradient(135deg,var(--accent),var(--accent-dark));">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="cinfo-text">
+                <h4>Call to Book</h4>
+                <a href="tel:+919876543210" class="cinfo-phone">+91 98765 43210</a>
+                <p class="cinfo-note">Tap to call — Mon to Sat, 10 AM–8 PM</p>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="cinfo-card glass-card">
+              <div class="cinfo-icon" style="background:linear-gradient(135deg,var(--secondary),var(--primary));">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="cinfo-text">
+                <h4>Working Hours</h4>
+                <p><strong>Monday – Saturday</strong></p>
+                <p>10:00 AM – 8:00 PM</p>
+                <p class="cinfo-note">Closed on Sundays &amp; Public Holidays</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="contact-cta-row" data-aos="fade-up" data-aos-delay="200">
+            <a href="tel:+919876543210" class="btn btn-primary btn-lg btn-ripple" id="contactCallBtn">
+              <i class="fa-solid fa-phone-volume"></i> Call Now
+            </a>
+            <a href="https://wa.me/919876543210" class="btn btn-whatsapp btn-lg btn-ripple" target="_blank" rel="noopener" id="contactWABtn">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Global+City+Virar+West+Maharashtra"
+              class="btn btn-directions btn-lg btn-ripple"
+              target="_blank"
+              rel="noopener"
+              id="contactDirBtn">
+              <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Google Map -->
+        <div class="contact-new-right" data-aos="fade-left" data-aos-duration="800">
+          <div class="map-wrap-new">
+            <iframe
+              title="CozPiraa Clinic Location – Global City, Virar West"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.2745985618726!2d72.79683121489867!3d19.46441578691127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9e4e8a2acd3%3A0x9bfa6a8f8d44b1a5!2sGlobal%20City%2C%20Virar%20West%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-popups-to-escape-sandbox">
+            </iframe>
+          </div>
+        </div>
+
+      </div><!-- /.contact-new-grid -->
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-col footer-brand">
+          <a href="#top" class="nav-logo" aria-label="CozPiraa Clinic">
+            <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="logo-text">
+              <span class="logo-brand">CozPiraa</span>
+              <span class="logo-sub">Clinic</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Your trusted multi-speciality healthcare partner in Virar West.
+            Compassionate care, modern treatments, lasting results.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/919876543210" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="#doctor"><i class="fa-solid fa-chevron-right"></i> Our Doctor</a></li>
+            <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i> Testimonials</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Dermatology</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Hair Care &amp; PRP</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Pediatrics</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Gynecology</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> General Medicine</a></li>
+            <li><a href="#treatments"><i class="fa-solid fa-chevron-right"></i> All Treatments</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact + Newsletter -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Shop No. 32, Agarwal Lifestyle Avenue, Global City, Virar West, MH</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:hello@cozpiraaclinic.com">hello@cozpiraaclinic.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon–Sat: 10:00 AM – 8:00 PM</span>
+            </li>
+          </ul>
+          <!-- Newsletter -->
+          <div class="newsletter-wrap">
+            <h4 class="footer-col-title" style="margin-top:1.5rem;">Newsletter</h4>
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <input type="email" id="newsletterEmail" placeholder="your@email.com" required />
+              <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            <p class="newsletter-note">Get health tips &amp; updates. No spam.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="copyrightYear"></span> CozPiraa Clinic. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms of Service</a>
+          <span>|</span>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       FLOATING BUTTONS
+  ===================================================== -->
+  <!-- WhatsApp Float -->
+  <a
+    href="https://wa.me/919876543210"
+    class="float-btn float-whatsapp"
+    id="floatWA"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+    title="Chat on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-tooltip">WhatsApp Us</span>
+  </a>
+
+  <!-- Call Float -->
+  <a
+    href="tel:+919876543210"
+    class="float-btn float-call"
+    id="floatCall"
+    aria-label="Call CozPiraa Clinic"
+    title="Call Now"
+  >
+    <i class="fa-solid fa-phone-volume"></i>
+    <span class="float-tooltip">Call Us Now</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button
+    class="back-to-top"
+    id="backToTop"
+    aria-label="Back to top"
+    title="Back to top"
+  >
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- =====================================================
+       SCRIPTS
+  ===================================================== -->
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
