@@ -122,6 +122,7 @@ html {
   font-size: 16px;
   -webkit-font-smoothing:  antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -2074,6 +2075,7 @@ body:has(input:focus, select:focus, textarea:focus) .back-to-top {
   .nav-link::after { display:none; }
 
   .hamburger { display:flex; }
+  .nav-actions { margin-left: auto; }
   .nav-actions .btn { display:none; }
 
   /* Hero */

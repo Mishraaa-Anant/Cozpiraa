@@ -53,6 +53,8 @@
       padding-top: var(--navbar-h);
       position: relative;
       overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     body.dark-mode .appt-page {
@@ -97,6 +99,8 @@
       padding: 70px 24px 100px;
       max-width: var(--container);
       margin: 0 auto;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     /* ── LEFT PANEL ── */
@@ -154,6 +158,8 @@
       padding: 16px 20px;
       border-radius: var(--radius-md);
       transition: transform var(--transition);
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .appt-info-card:hover {
@@ -198,6 +204,8 @@
       padding: 20px 24px;
       border-radius: var(--radius-md);
       flex-wrap: wrap;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .appt-doc-img {
@@ -359,6 +367,8 @@
 
     .select-wrap {
       position: relative;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .select-wrap select {
@@ -724,11 +734,6 @@
 
   <!-- Scroll Progress -->
   <div id="scrollProgress" class="scroll-progress" aria-hidden="true"></div>
-
-  <!-- Dark Mode Toggle -->
-  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-    <i class="fa-solid fa-moon" id="themeIcon"></i>
-  </button>
 
   <!-- =====================================================
        NAVBAR

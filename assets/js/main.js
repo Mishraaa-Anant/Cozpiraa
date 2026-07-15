@@ -183,28 +183,13 @@
 
 
 /* =====================================================
-   5. DARK MODE TOGGLE
+   5. DARK MODE TOGGLE (Intentionally disabled — light mode only)
 ===================================================== */
 (function initDarkMode() {
-  const toggle    = document.getElementById('themeToggle');
-  const icon      = document.getElementById('themeIcon');
-  const body      = document.body;
-  if (!toggle) return;
-
-  // Load saved preference
-  const saved = localStorage.getItem('cozpiraa-theme');
-  if (saved === 'dark') {
-    body.classList.add('dark-mode');
-    body.classList.remove('light-mode');
-    icon.className = 'fa-solid fa-sun';
-  }
-
-  toggle.addEventListener('click', () => {
-    const isDark = body.classList.toggle('dark-mode');
-    body.classList.toggle('light-mode', !isDark);
-    icon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-    localStorage.setItem('cozpiraa-theme', isDark ? 'dark' : 'light');
-  });
+  const body = document.body;
+  body.classList.remove('dark-mode');
+  body.classList.add('light-mode');
+  localStorage.removeItem('cozpiraa-theme');
 })();
 
 
@@ -740,8 +725,6 @@
    MISC: Prevent FOUC on dark mode
 ===================================================== */
 (function preventFOUC() {
-  const saved = localStorage.getItem('cozpiraa-theme');
-  if (saved === 'dark') {
-    document.documentElement.style.colorScheme = 'dark';
-  }
+  localStorage.removeItem('cozpiraa-theme');
+  document.documentElement.style.colorScheme = 'light';
 })();
