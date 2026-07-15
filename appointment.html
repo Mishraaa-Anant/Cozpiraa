@@ -568,7 +568,7 @@
     @media (max-width: 900px) {
       .appt-inner {
         grid-template-columns: 1fr;
-        padding: 40px 20px 80px;
+        padding: 40px 20px 100px;
         gap: 32px;
       }
 
@@ -577,19 +577,19 @@
       }
 
       .appt-form-card {
-        padding: 36px 30px;
+        padding: 32px; /* Equal padding on all sides */
       }
     }
 
     /* Mobile landscape / large phones: 680px */
     @media (max-width: 680px) {
       .appt-inner {
-        padding: 32px 16px 70px;
+        padding: 32px 16px 110px;
         gap: 28px;
       }
 
       .appt-form-card {
-        padding: 28px 20px;
+        padding: 24px; /* Equal padding on all sides */
         border-radius: var(--radius-md);
       }
 
@@ -616,11 +616,11 @@
     /* Mobile portrait: 480px */
     @media (max-width: 480px) {
       .appt-inner {
-        padding: 24px 14px 60px;
+        padding: 24px 14px 120px; /* Safe scroll padding at bottom for floating buttons */
       }
 
       .appt-form-card {
-        padding: 24px 16px;
+        padding: 20px; /* Equal padding on all sides */
         border-radius: 16px;
       }
 
@@ -644,6 +644,8 @@
       .appt-form select {
         padding: 12px 14px;
         font-size: .9rem;
+        width: 100%;
+        box-sizing: border-box; /* Force proper width containment */
       }
 
       .slot-timeline {
@@ -672,14 +674,18 @@
       }
 
       .appt-success {
-        padding: 28px 12px;
+        padding: 24px 12px;
       }
     }
 
     /* Very small phones: 380px */
     @media (max-width: 380px) {
+      .appt-inner {
+        padding: 20px 10px 130px;
+      }
+
       .appt-form-card {
-        padding: 20px 12px;
+        padding: 16px; /* Equal padding on all sides */
       }
 
       .slot-timeline {

@@ -1912,6 +1912,15 @@ body.dark-mode .hero {
   transform:  translateY(-3px);
 }
 
+/* Hide floating action and scroll-to-top buttons when input fields are focused on mobile */
+body:has(input:focus, select:focus, textarea:focus) .float-btn,
+body:has(input:focus, select:focus, textarea:focus) .back-to-top {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+
 
 /* =====================================================
    22. ANIMATIONS & KEYFRAMES
@@ -2025,6 +2034,18 @@ body.dark-mode .hero {
   .doctor-btns { justify-content: center; }
 
   .contact-grid { grid-template-columns: 1fr; }
+
+  /* Position theme toggle nicely next to the navigation hamburger on mobile/tablet */
+  .theme-toggle {
+    top: 8px !important;
+    right: 80px !important;
+    transform: none !important;
+    position: fixed !important;
+    z-index: 1000 !important;
+  }
+  .theme-toggle:hover {
+    transform: none !important;
+  }
 }
 
 /* ---- Mobile (≤768px) ---- */
@@ -2076,6 +2097,11 @@ body.dark-mode .hero {
   /* Footer */
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom-inner { flex-direction:column; text-align:center; }
+
+  /* Allow space at the bottom of the page to scroll past floating action buttons */
+  .footer {
+    padding-bottom: 80px !important;
+  }
 }
 
 /* ---- Small Mobile (≤480px) ---- */
@@ -2088,7 +2114,7 @@ body.dark-mode .hero {
   .float-whatsapp { bottom: 88px; right: 16px; }
   .float-call     { bottom: 148px; right: 16px; }
   .back-to-top    { bottom: 16px; right: 16px; }
-  .theme-toggle   { right: 12px; }
+  .theme-toggle   { right: 70px !important; }
 }
 
 
@@ -2418,9 +2444,11 @@ body.dark-mode .yt-skeleton {
   display:     flex;
   align-items: flex-start;
   gap:         16px;
-  padding:     20px 22px;
+  padding:     24px;
   border-radius: var(--radius-md);
   transition:  transform var(--transition), box-shadow var(--transition);
+  box-sizing:  border-box;
+  width:       100%;
 }
 .cinfo-card:hover {
   transform:  translateY(-3px);
@@ -2440,7 +2468,10 @@ body.dark-mode .yt-skeleton {
   box-shadow:      0 6px 18px rgba(15,118,110,.25);
 }
 
-.cinfo-text { flex: 1; }
+.cinfo-text {
+  flex: 1;
+  min-width: 0; /* allows text wrapping inside flex container */
+}
 .cinfo-text h4 {
   font-size:     .85rem;
   font-weight:   700;
@@ -2458,12 +2489,15 @@ body.dark-mode .yt-skeleton {
 }
 
 .cinfo-phone {
-  font-size:   1.2rem;
+  font-size:   clamp(1rem, 4.5vw, 1.2rem);
   font-weight: 800;
   color:       var(--primary);
   transition:  color var(--transition);
   display:     block;
   margin-bottom:4px;
+  overflow-wrap: break-word;
+  word-wrap:     break-word;
+  word-break:    break-all;
 }
 .cinfo-phone:hover { color: var(--secondary); }
 
