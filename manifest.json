@@ -1,0 +1,52 @@
+{
+  "name": "CozPiraa Clinic",
+  "short_name": "CozPiraa",
+  "description": "Best Dermatologist & Multi-Speciality Clinic in Virar West — Book appointments, view health tips.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FFFBF5",
+  "theme_color": "#E8600A",
+  "categories": ["health", "medical"],
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "assets/images/latest.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/latest.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Appointment",
+      "short_name": "Book",
+      "description": "Book a clinic appointment",
+      "url": "/appointment.html",
+      "icons": [{ "src": "assets/images/latest.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Admin Panel",
+      "short_name": "Admin",
+      "description": "View all appointments",
+      "url": "/admin.html",
+      "icons": [{ "src": "assets/images/latest.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/images/latest.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "CozPiraa Clinic Homepage"
+    }
+  ]
+}
