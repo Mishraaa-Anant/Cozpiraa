@@ -7,7 +7,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://cozpiraa.vercel.app/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,17 +15,9 @@
   <!-- Appointment Page -->
   <url>
     <loc>https://cozpiraa.vercel.app/appointment.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <!-- 404 Page (optional, low priority) -->
-  <url>
-    <loc>https://cozpiraa.vercel.app/404.html</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
   </url>
 
 </urlset>
