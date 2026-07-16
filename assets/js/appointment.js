@@ -106,7 +106,7 @@ const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // e.g. 'template_xyz789'
     } catch (error) {
       console.error('Appointment submission error:', error);
       setLoading(false);
-      showFormError('Something went wrong. Please call us directly at +91 98765 43210 or try again.');
+      showFormError('Something went wrong. Please call us directly at +91 72493 12567 or try again.');
     }
   });
 
