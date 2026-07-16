@@ -12,14 +12,16 @@
   <title>Book Appointment Online | CozPiraa Clinic – Best Dermatologist Virar West</title>
   <meta name="description"
     content="Book your appointment 24/7 at CozPiraa Clinic, Virar West. Instant online booking for Dermatology, Acne, PRP Hair Therapy, Laser Treatment, Pediatrics, PCOS &amp; General Medicine. Confirm in seconds!" />
-  <meta name="keywords" content="book dermatologist appointment virar, online clinic booking virar west, book skin doctor virar, CozPiraa appointment, acne treatment appointment virar, PRP hair therapy booking virar, skin clinic appointment global city virar, book doctor near me virar, online appointment dermatologist virar west" />
+  <meta name="keywords"
+    content="book dermatologist appointment virar, online clinic booking virar west, book skin doctor virar, CozPiraa appointment, acne treatment appointment virar, PRP hair therapy booking virar, skin clinic appointment global city virar, book doctor near me virar, online appointment dermatologist virar west" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <link rel="canonical" href="https://cozpiraa.vercel.app/appointment.html" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Book Appointment | CozPiraa Clinic – Dermatologist Virar West" />
-  <meta property="og:description" content="Instant 24/7 online booking at CozPiraa Clinic, Virar West. Dermatology, PRP, Laser, PCOS &amp; Paediatric care by Dr. Priyanka Rahul Patil (BAMS). Confirm your slot in seconds!" />
+  <meta property="og:description"
+    content="Instant 24/7 online booking at CozPiraa Clinic, Virar West. Dermatology, PRP, Laser, PCOS &amp; Paediatric care by Dr. Priyanka Rahul Patil (BAMS). Confirm your slot in seconds!" />
   <meta property="og:url" content="https://cozpiraa.vercel.app/appointment.html" />
   <meta property="og:site_name" content="CozPiraa Clinic" />
   <meta property="og:image" content="https://cozpiraa.vercel.app/assets/images/latest.png" />
@@ -31,7 +33,8 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Book Appointment | CozPiraa Clinic – Dermatologist Virar West" />
-  <meta name="twitter:description" content="24/7 online slot booking at CozPiraa Clinic, Virar West. Dermatology, PRP, PCOS &amp; more. Confirm instantly!" />
+  <meta name="twitter:description"
+    content="24/7 online slot booking at CozPiraa Clinic, Virar West. Dermatology, PRP, PCOS &amp; more. Confirm instantly!" />
   <meta name="twitter:image" content="https://cozpiraa.vercel.app/assets/images/latest.png" />
   <meta name="twitter:image:alt" content="CozPiraa Clinic – Book Appointment Virar West" />
 
@@ -127,21 +130,27 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 
   <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-    html, body {
+    /* ── GLOBAL MOBILE OVERFLOW FIX ── */
+    html,
+    body {
       max-width: 100%;
       overflow-x: hidden;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
     /* ── Appointment Page Specific Styles ── */
     .appt-page {
       min-height: 100vh;
       background: linear-gradient(135deg, #FFF7ED 0%, #FFFBF5 50%, #FEF3E2 100%);
       padding-top: var(--navbar-h);
       position: relative;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: visible;
       width: 100%;
+      max-width: 100vw;
       box-sizing: border-box;
     }
 
@@ -152,11 +161,11 @@
     /* Background blobs */
     .appt-blob {
       position: absolute;
+      max-width: 100vw;
       border-radius: 50%;
       filter: blur(90px);
       pointer-events: none;
       z-index: 0;
-      max-width: 100vw;
     }
 
     .appt-blob-1 {
@@ -197,6 +206,7 @@
     .appt-left {
       position: sticky;
       top: calc(var(--navbar-h) + 32px);
+      min-width: 0;
     }
 
     .appt-breadcrumb {
@@ -239,6 +249,7 @@
       flex-direction: column;
       gap: 14px;
       margin-bottom: 32px;
+      width: 100%;
     }
 
     .appt-info-card {
@@ -249,17 +260,12 @@
       border-radius: var(--radius-md);
       transition: transform var(--transition);
       width: 100%;
+      max-width: 100%;
       box-sizing: border-box;
     }
 
     .appt-info-card:hover {
       transform: translateX(6px);
-    }
-
-    .appt-info-card > div {
-      min-width: 0;
-      overflow-wrap: break-word;
-      word-break: break-word;
     }
 
     .appt-info-card i {
@@ -275,6 +281,13 @@
       border-radius: 12px;
     }
 
+    .appt-info-card>div {
+      min-width: 0;
+      flex: 1;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
     .appt-info-card strong {
       display: block;
       font-size: .88rem;
@@ -286,6 +299,8 @@
     .appt-info-card a {
       font-size: .84rem;
       color: var(--text-light);
+      overflow-wrap: break-word;
+      word-break: break-word;
     }
 
     .appt-info-card a:hover {
@@ -301,13 +316,8 @@
       border-radius: var(--radius-md);
       flex-wrap: wrap;
       width: 100%;
+      max-width: 100%;
       box-sizing: border-box;
-    }
-
-    .appt-doctor-mini > div {
-      min-width: 0;
-      overflow-wrap: break-word;
-      word-break: break-word;
     }
 
     .appt-doc-img {
@@ -317,6 +327,12 @@
       object-fit: cover;
       border: 3px solid var(--primary);
       flex-shrink: 0;
+    }
+
+    .appt-doctor-mini>div {
+      min-width: 0;
+      flex: 1;
+      overflow-wrap: break-word;
     }
 
     .appt-doctor-mini strong {
@@ -335,6 +351,10 @@
       color: #F59E0B;
       font-size: .78rem;
       margin-top: 4px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px;
     }
 
     .appt-doc-stars span {
@@ -406,6 +426,7 @@
       flex-direction: column;
       gap: 18px;
       width: 100%;
+      max-width: 100%;
     }
 
     .form-row-2 {
@@ -413,6 +434,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 18px;
       width: 100%;
+      max-width: 100%;
     }
 
     .appt-form .form-group {
@@ -421,6 +443,7 @@
       gap: 7px;
       min-width: 0;
       width: 100%;
+      max-width: 100%;
     }
 
     .appt-form label {
@@ -445,6 +468,7 @@
     .appt-form input,
     .appt-form select {
       width: 100%;
+      max-width: 100%;
       padding: 13px 16px;
       border: 1.5px solid var(--border-strong);
       border-radius: var(--radius-sm);
@@ -453,7 +477,8 @@
       font-family: inherit;
       font-size: .93rem;
       line-height: 1.4;
-      height: 50px;          /* fixed height — same for all fields */
+      height: 50px;
+      /* fixed height — same for all fields */
       transition: all var(--transition);
       outline: none;
       appearance: none;
@@ -477,6 +502,7 @@
     .select-wrap {
       position: relative;
       width: 100%;
+      max-width: 100%;
       box-sizing: border-box;
     }
 
@@ -500,6 +526,7 @@
       color: #EF4444;
       min-height: 16px;
       display: block;
+      overflow-wrap: break-word;
     }
 
     /* Slot availability indicator */
@@ -513,6 +540,8 @@
       border-radius: var(--radius-sm);
       min-height: 36px;
       flex-wrap: wrap;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .slot-availability.loading {
@@ -542,6 +571,7 @@
     /* Submit button */
     .appt-submit-btn {
       width: 100%;
+      max-width: 100%;
       justify-content: center;
       padding: 16px;
       font-size: 1.05rem;
@@ -549,6 +579,7 @@
       margin-top: 8px;
       position: relative;
       overflow: hidden;
+      box-sizing: border-box;
     }
 
     .btn-spinner {
@@ -580,9 +611,19 @@
     }
 
     @keyframes successPop {
-      0%   { transform: scale(0.5); opacity: 0; }
-      70%  { transform: scale(1.15); }
-      100% { transform: scale(1); opacity: 1; }
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+
+      70% {
+        transform: scale(1.15);
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     .appt-success-icon {
@@ -609,7 +650,7 @@
 
     .appt-success .booking-ref {
       display: inline-block;
-      background: linear-gradient(135deg, rgba(232,96,10,.10), rgba(234,179,8,.10));
+      background: linear-gradient(135deg, rgba(232, 96, 10, .10), rgba(234, 179, 8, .10));
       border: 1px solid var(--border-strong);
       border-radius: var(--radius-sm);
       padding: 12px 24px;
@@ -627,6 +668,9 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
       gap: 8px;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .slot-chip {
@@ -645,24 +689,26 @@
       align-items: center;
       justify-content: center;
       -webkit-tap-highlight-color: transparent;
+      max-width: 100%;
+      box-sizing: border-box;
     }
 
     .slot-chip.open {
-      background: rgba(22,163,74,.10);
+      background: rgba(22, 163, 74, .10);
       color: #16A34A;
-      border-color: rgba(22,163,74,.25);
+      border-color: rgba(22, 163, 74, .25);
     }
 
     .slot-chip.filling {
-      background: rgba(217,119,6,.10);
+      background: rgba(217, 119, 6, .10);
       color: #D97706;
-      border-color: rgba(217,119,6,.25);
+      border-color: rgba(217, 119, 6, .25);
     }
 
     .slot-chip.full {
-      background: rgba(220,38,38,.08);
+      background: rgba(220, 38, 38, .08);
       color: #DC2626;
-      border-color: rgba(220,38,38,.18);
+      border-color: rgba(220, 38, 38, .18);
       cursor: not-allowed;
       opacity: .6;
     }
@@ -672,7 +718,7 @@
       color: #fff;
       border-color: transparent;
       transform: scale(1.05);
-      box-shadow: 0 4px 14px rgba(232,96,10,.35);
+      box-shadow: 0 4px 14px rgba(232, 96, 10, .35);
     }
 
     .slot-chip .slot-label {
@@ -699,18 +745,22 @@
         padding: 40px 24px 80px;
         gap: 40px;
       }
+
       .appt-left {
         position: static;
         width: 100%;
       }
+
       .appt-form-card {
         padding: 40px 32px;
       }
+
       .appt-info-cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
       }
+
       .appt-doctor-mini {
         width: 100%;
       }
@@ -722,22 +772,27 @@
         padding: 32px 16px 80px;
         gap: 32px;
       }
+
       .appt-form-card {
         padding: 32px 24px;
         border-radius: 20px;
       }
+
       .appt-info-cards {
         grid-template-columns: 1fr;
         gap: 12px;
       }
+
       .form-row-2 {
         grid-template-columns: 1fr;
         gap: 14px;
       }
+
       .slot-timeline {
         grid-template-columns: repeat(3, 1fr);
         gap: 8px;
       }
+
       .appt-hero-title {
         font-size: 2rem;
       }
@@ -750,13 +805,16 @@
         width: 100%;
         margin-bottom: 12px;
       }
+
       .appt-inner {
         grid-template-columns: 1fr;
         padding: 24px 12px 80px;
         gap: 24px;
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
       }
+
       .appt-form-card {
         padding: 28px 20px;
         border-radius: 20px;
@@ -768,19 +826,24 @@
         box-sizing: border-box;
         position: relative;
       }
+
       .appt-form-card::before {
         content: '';
         display: block;
         position: absolute;
-        top: 0; left: 0; right: 0;
+        top: 0;
+        left: 0;
+        right: 0;
         height: 5px;
         background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
       }
+
       .appt-form-header {
         align-items: center;
         gap: 12px;
         margin-bottom: 24px;
       }
+
       .appt-form-icon {
         width: 46px;
         height: 46px;
@@ -788,36 +851,45 @@
         border-radius: 12px;
         flex-shrink: 0;
       }
+
       .appt-form {
         gap: 16px;
       }
+
       .form-row-2 {
         grid-template-columns: 1fr;
         gap: 16px;
       }
+
       .appt-form input,
       .appt-form select {
         padding: 0 14px;
         font-size: .95rem;
         width: 100%;
-        height: 50px;          /* consistent 50px height */
+        max-width: 100%;
+        height: 50px;
+        /* consistent 50px height */
         box-sizing: border-box;
         border-radius: 10px;
         display: block;
       }
+
       .select-wrap select {
         padding-right: 36px;
       }
+
       .slot-timeline {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
       }
+
       .slot-chip {
         min-height: 54px;
         font-size: .78rem;
         padding: 8px 4px;
         border-radius: 10px;
       }
+
       .appt-submit-btn {
         padding: 16px;
         font-size: 1rem;
@@ -825,17 +897,21 @@
         border-radius: 12px;
         width: 100%;
       }
+
       .appt-form-note {
         font-size: .76rem;
       }
+
       .appt-info-cards {
         grid-template-columns: 1fr;
         gap: 10px;
       }
+
       .appt-info-card {
         padding: 14px 16px;
         border-radius: var(--radius-md);
       }
+
       .appt-doctor-mini {
         padding: 16px 20px;
         border-radius: var(--radius-md);
@@ -848,18 +924,22 @@
         padding: 16px 8px 70px;
         gap: 20px;
       }
+
       .appt-form-card {
         padding: 22px 14px;
         border-radius: 16px;
       }
+
       .slot-timeline {
         grid-template-columns: repeat(2, 1fr);
         gap: 6px;
       }
+
       .slot-chip {
         font-size: .72rem;
         min-height: 50px;
       }
+
       .appt-form input,
       .appt-form select {
         padding: 0 12px;
@@ -1169,30 +1249,6 @@
   <script>
     // ─────────────────────────────────────────────────────────
     //  SUPABASE CONFIG
-    //  ⚠️  Replace with your actual Supabase project values.
-    //      Get them from: https://supabase.com → Project Settings → API
-    //
-    //  Required Supabase table (run in SQL Editor):
-    //
-    //  create table public.appointments (
-    //    id          uuid primary key default gen_random_uuid(),
-    //    name        text not null,
-    //    age         int  not null,
-    //    phone       text not null,
-    //    blood_group text not null,
-    //    day         date not null,
-    //    slot        text not null,
-    //    booking_ref text not null,
-    //    status      text default 'confirmed',
-    //    created_at  timestamptz default now()
-    //  );
-    //
-    //  Enable Row Level Security and add an INSERT policy:
-    //  alter table public.appointments enable row level security;
-    //  create policy "Allow public insert" on public.appointments
-    //    for insert with check (true);
-    //  create policy "Allow public select" on public.appointments
-    //    for select using (true);
     // ─────────────────────────────────────────────────────────
     const SUPABASE_URL = 'https://vpaahuxhqodjbwxajsiq.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZwYWFodXhocW9kamJ3eGFqc2lxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQwODk3NTYsImV4cCI6MjA5OTY2NTc1Nn0.JbxjtH8yJGT65TNZ4XR06SwnnJW1AL_9iaAy2V-nv1c'; // long anon/public key
