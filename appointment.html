@@ -666,77 +666,134 @@
 
     /* Large tablets */
     @media (max-width: 1100px) {
-      .appt-inner { gap: 40px; padding: 60px 20px 80px; }
+      .appt-inner {
+        gap: 40px;
+        padding: 60px 20px 80px;
+      }
     }
 
-    /* Tablet — single column */
+    /* Tablet — switch to single column */
     @media (max-width: 900px) {
       .appt-inner {
         grid-template-columns: 1fr;
-        padding: 28px 20px 80px;
-        gap: 20px;
+        padding: 40px 24px 80px;
+        gap: 40px;
       }
-      .appt-left { position: static; }
-      .appt-form-card { padding: 32px 28px; }
+      .appt-left {
+        position: static;
+        width: 100%;
+      }
+      .appt-form-card {
+        padding: 40px 32px;
+      }
+      .appt-info-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .appt-doctor-mini {
+        width: 100%;
+      }
     }
 
     /* Large phones */
     @media (max-width: 680px) {
-      .appt-inner { padding: 20px 14px 80px; gap: 16px; }
-      .appt-form-card { padding: 24px 18px; border-radius: 18px; }
-      .form-row-2 { grid-template-columns: 1fr; gap: 14px; }
-      .slot-timeline { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-      .appt-hero-title { font-size: 1.75rem; }
-    }
-
-    /* Mobile — hide left panel, single column form only */
-    @media (max-width: 540px) {
-      .appt-left { display: none; }
       .appt-inner {
-        grid-template-columns: 1fr;
-        padding: 12px 10px 80px;
-        gap: 0;
+        padding: 32px 16px 80px;
+        gap: 32px;
       }
       .appt-form-card {
-        padding: 22px 16px 28px;
-        border-radius: 16px;
-        border-left: none;
-        border-right: none;
-        border-radius: 0;
-        box-shadow: none;
-        border-top: none;
+        padding: 32px 24px;
+        border-radius: 20px;
       }
-      .appt-form-card::before { display: none; }
+      .appt-info-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .form-row-2 {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .slot-timeline {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+      .appt-hero-title {
+        font-size: 2rem;
+      }
+    }
+
+    /* Mobile screens — keep the premium card aesthetics, borders, and gradients */
+    @media (max-width: 540px) {
+      .appt-left {
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+      }
+      .appt-inner {
+        grid-template-columns: 1fr;
+        padding: 24px 12px 80px;
+        gap: 24px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .appt-form-card {
+        padding: 28px 20px;
+        border-radius: 20px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        background: var(--card);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        position: relative;
+      }
+      .appt-form-card::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 5px;
+        background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+      }
       .appt-form-header {
         align-items: center;
         gap: 12px;
-        margin-bottom: 18px;
+        margin-bottom: 24px;
       }
       .appt-form-icon {
-        width: 44px;
-        height: 44px;
-        font-size: 1rem;
+        width: 46px;
+        height: 46px;
+        font-size: 1.1rem;
         border-radius: 12px;
         flex-shrink: 0;
       }
-      .appt-form { gap: 14px; }
-      .form-row-2 { grid-template-columns: 1fr; gap: 14px; }
+      .appt-form {
+        gap: 16px;
+      }
+      .form-row-2 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
       .appt-form input,
       .appt-form select {
         padding: 0 14px;
-        font-size: 1rem;
+        font-size: .95rem;
         width: 100%;
-        height: 50px;          /* match desktop */
+        height: 50px;          /* consistent 50px height */
         box-sizing: border-box;
         border-radius: 10px;
+        display: block;
       }
-      .select-wrap select { padding-right: 36px; }
+      .select-wrap select {
+        padding-right: 36px;
+      }
       .slot-timeline {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
       }
       .slot-chip {
-        min-height: 56px;
+        min-height: 54px;
         font-size: .78rem;
         padding: 8px 4px;
         border-radius: 10px;
@@ -744,20 +801,51 @@
       .appt-submit-btn {
         padding: 16px;
         font-size: 1rem;
-        min-height: 54px;
+        min-height: 52px;
         border-radius: 12px;
         width: 100%;
       }
-      .appt-form-note { font-size: .74rem; }
+      .appt-form-note {
+        font-size: .76rem;
+      }
+      .appt-info-cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .appt-info-card {
+        padding: 14px 16px;
+        border-radius: var(--radius-md);
+      }
+      .appt-doctor-mini {
+        padding: 16px 20px;
+        border-radius: var(--radius-md);
+      }
     }
 
     /* Very small phones */
     @media (max-width: 380px) {
-      .appt-inner { padding: 10px 8px 70px; }
-      .appt-form-card { padding: 18px 14px 24px; }
-      .slot-timeline { grid-template-columns: repeat(2, 1fr); gap: 6px; }
-      .slot-chip { font-size: .72rem; min-height: 52px; }
-      .appt-form input, .appt-form select { padding: 0 12px; height: 50px; font-size: .95rem; border-radius: 9px; }
+      .appt-inner {
+        padding: 16px 8px 70px;
+        gap: 20px;
+      }
+      .appt-form-card {
+        padding: 22px 14px;
+        border-radius: 16px;
+      }
+      .slot-timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+      }
+      .slot-chip {
+        font-size: .72rem;
+        min-height: 50px;
+      }
+      .appt-form input,
+      .appt-form select {
+        padding: 0 12px;
+        height: 48px;
+        font-size: .92rem;
+      }
     }
   </style>
 </head>
