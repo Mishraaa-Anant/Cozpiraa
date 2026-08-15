@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-ivory-100 text-charcoal-800 font-sans antialiased selection:bg-sage-600 selection:text-white;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #C6D8CF;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4D7C69;
+}
