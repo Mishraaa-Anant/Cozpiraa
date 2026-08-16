@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, Menu, X, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/Button";
@@ -18,6 +19,8 @@ const NAV_LINKS = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -36,15 +39,42 @@ export function Navbar() {
 
   const scrollToSection = (href: string) => {
     setMobileMenuOpen(false);
-    const element = document.querySelector(href);
+
+    let targetSelector = href;
+    if (targetSelector === "#treatments" && !document.querySelector("#treatments")) {
+      targetSelector = "#journey";
+    }
+
+    const element = document.querySelector(targetSelector);
     if (element) {
       const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
       });
+    } else {
+      router.push(`/${href}`);
     }
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.location.hash) {
+      let hash = window.location.hash;
+      if (hash === "#treatments" && !document.querySelector("#treatments")) {
+        hash = "#journey";
+      }
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 80;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: "smooth",
+          });
+        }
+      }, 150);
+    }
+  }, [pathname]);
 
   return (
     <header
@@ -58,7 +88,7 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link
-            href="#home"
+            href="/"
             onClick={(e) => {
               e.preventDefault();
               scrollToSection("#home");

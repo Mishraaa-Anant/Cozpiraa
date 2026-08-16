@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,14 +61,14 @@ export function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm">
               {[
-                { label: "Home", href: "#home" },
-                { label: "About COZPIRAA Clinic", href: "#about" },
-                { label: "Dermatology & Cosmetology Services", href: "#services" },
-                { label: "Skin Concern Selector", href: "#concerns" },
-                { label: "Patient Care Journey", href: "#journey" },
-                { label: "Best Dermatologist in Virar", href: "#doctor" },
-                { label: "Frequently Asked Questions", href: "#faq" },
-                { label: "Book Consultation", href: "#appointment" },
+                { label: "Home", href: "/#home" },
+                { label: "About COZPIRAA Clinic", href: "/#about" },
+                { label: "Dermatology & Cosmetology Services", href: "/#services" },
+                { label: "Skin Concern Selector", href: "/#concerns" },
+                { label: "Patient Care Journey", href: "/#journey" },
+                { label: "Best Dermatologist in Virar", href: "/#doctor" },
+                { label: "Frequently Asked Questions", href: "/#faq" },
+                { label: "Book Consultation", href: "/#appointment" },
               ].map((link) => (
                 <li key={link.label}>
                   <a
@@ -169,12 +171,21 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-charcoal-400 gap-4">
           <p>© {new Date().getFullYear()} COZPIRAA Dermatology & Cosmetology Clinic. All rights reserved.</p>
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3">
             <span>Best Dermatologist in Virar</span>
             <span>·</span>
-            <span>Best Cosmetologist in Virar West</span>
-            <span>·</span>
             <span>Dr. Priyanka Rahul Patil</span>
+            <span>·</span>
+            <button
+              onClick={() => {
+                if (typeof window !== "undefined" && (window as any).openCookiePreferences) {
+                  (window as any).openCookiePreferences();
+                }
+              }}
+              className="hover:text-white transition-colors underline focus:outline-none"
+            >
+              Cookie Preferences
+            </button>
           </div>
         </div>
       </div>

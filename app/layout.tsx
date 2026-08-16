@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Outfit, Inter } from "next/font/google";
+import { PwaProvider } from "@/components/pwa/PwaProvider";
+import { CookieBanner } from "@/components/cookies/CookieBanner";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -24,6 +26,16 @@ export const metadata: Metadata = {
   title: "Best Dermatologist & Cosmetologist in Virar West | Dr. Priyanka Patil | COZPIRAA",
   description:
     "Looking for the best dermatologist and cosmetologist in Virar? COZPIRAA Skin Clinic in Global City, Virar West provides expert treatment for acne, scars, melasma, hyperpigmentation, anti-aging & PRP hair fall by Dr. Priyanka Rahul Patil (BAMS, 9+ Yrs Exp). Book your consultation today!",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "COZPIRAA",
+  },
+  icons: {
+    icon: "/images/latest.png",
+    apple: "/images/latest.png",
+  },
   keywords: [
     "Best Dermatologist in Virar",
     "Best Cosmetologist in Virar",
@@ -244,6 +256,8 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         {children}
+        <PwaProvider />
+        <CookieBanner />
       </body>
     </html>
   );
