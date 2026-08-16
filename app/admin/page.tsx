@@ -372,7 +372,7 @@ export default function AdminPage() {
           </form>
 
           <p className="text-center text-xs text-charcoal-400 mt-6">
-            Default credentials: <code className="bg-sage-100 px-1.5 py-0.5 rounded text-sage-800">priyanka</code> / <code className="bg-sage-100 px-1.5 py-0.5 rounded text-sage-800">priyanka</code>
+            Authorized COZPIRAA Clinic Staff Only
           </p>
         </div>
       </div>
