@@ -25,7 +25,7 @@ export function Footer() {
               <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-white p-1">
                 <Image
                   src="/images/latest.png"
-                  alt="COZPIRAA Dermatology & Cosmetology Logo"
+                  alt="COZPIRAA Skin, Hair, Laser & Cosmetology Logo"
                   fill
                   className="object-contain"
                 />
@@ -36,20 +36,20 @@ export function Footer() {
                   <ShieldCheck className="w-4 h-4 text-sage-400 inline" />
                 </span>
                 <span className="text-[10px] uppercase font-semibold text-sage-400 tracking-widest -mt-1">
-                  Dermatology & Cosmetology
+                  Skin, Hair & Laser Clinic
                 </span>
               </div>
             </div>
 
             <p className="text-charcoal-300 text-sm leading-relaxed">
-              COZPIRAA is recognized as the top-rated dermatology & cosmetology clinic in Virar West, delivering evidence-based clinical skin care, acne scar subcision, melasma care, laser rejuvenation, and PRP hair growth by Dr. Priyanka Rahul Patil.
+              COZPIRAA is recognized as the top-rated cosmetology and skin, hair, laser treatment clinic in Virar West, delivering evidence-based clinical skin care, acne scar subcision, melasma care, laser rejuvenation, and PRP hair growth by Dr. Priyanka Rahul Patil.
             </p>
 
             <div className="pt-2 text-xs text-charcoal-400 space-y-1">
               <p className="font-medium text-ivory-200">
-                Lead Dermatologist & Cosmetologist: {DOCTOR_PROFILE.name} ({DOCTOR_PROFILE.qualification})
+                Cosmetology Consultant: {DOCTOR_PROFILE.name} ({DOCTOR_PROFILE.qualification})
               </p>
-              <p>9+ Years Experience · Global City, Virar West</p>
+              <p>10+ Years Experience · Global City, Virar West</p>
             </div>
           </div>
 
@@ -63,10 +63,10 @@ export function Footer() {
               {[
                 { label: "Home", href: "/#home" },
                 { label: "About COZPIRAA Clinic", href: "/#about" },
-                { label: "Dermatology & Cosmetology Services", href: "/#services" },
+                { label: "Skin, Hair & Laser Services", href: "/#services" },
                 { label: "Skin Concern Selector", href: "/#concerns" },
                 { label: "Patient Care Journey", href: "/#journey" },
-                { label: "Best Dermatologist in Virar", href: "/#doctor" },
+                { label: "Cosmetology Consultant in Virar", href: "/#doctor" },
                 { label: "Frequently Asked Questions", href: "/#faq" },
                 { label: "Book Consultation", href: "/#appointment" },
               ].map((link) => (
@@ -170,9 +170,9 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-charcoal-400 gap-4">
-          <p>© {new Date().getFullYear()} COZPIRAA Dermatology & Cosmetology Clinic. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} COZPIRAA Skin, Hair & Laser Clinic. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-3">
-            <span>Best Dermatologist in Virar</span>
+            <span>Cosmetology Consultant in Virar</span>
             <span>·</span>
             <span>Dr. Priyanka Rahul Patil</span>
             <span>·</span>

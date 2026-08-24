@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/Button";
 const NAV_LINKS = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Dermatology", href: "#services" },
+  { name: "Services", href: "#services" },
   { name: "Skin Concerns", href: "#concerns" },
   { name: "Treatments", href: "#treatments" },
   { name: "FAQs", href: "#faq" },
@@ -111,7 +111,7 @@ export function Navbar() {
               <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm border border-sage-600/20 bg-white p-1 group-hover:scale-105 transition-transform">
                 <Image
                   src="/images/latest.png"
-                  alt="COZPIRAA Dermatology Clinic"
+                  alt="COZPIRAA Skin, Hair & Laser Clinic"
                   fill
                   className="object-contain p-0.5"
                   priority
@@ -123,7 +123,7 @@ export function Navbar() {
                   <ShieldCheck className="w-4 h-4 text-sage-600 inline" />
                 </span>
                 <span className="text-[10px] uppercase font-semibold text-sage-700 tracking-widest -mt-1">
-                  Dermatology Clinic
+                  Skin, Hair & Laser Clinic
                 </span>
               </div>
             </Link>

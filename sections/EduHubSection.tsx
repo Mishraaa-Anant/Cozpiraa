@@ -17,7 +17,7 @@ export function EduHubSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <Badge variant="sage" icon={<BookOpen className="w-3.5 h-3.5" />}>
-            Educational Dermatology Hub
+            Educational Skin Care Hub
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-800 tracking-tight">
             Understand Your Skin

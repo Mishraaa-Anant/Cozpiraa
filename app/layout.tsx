@@ -23,9 +23,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Best Dermatologist & Cosmetologist in Virar West | Dr. Priyanka Patil | COZPIRAA",
+  title: "Best Cosmetology Consultant & Skin, Hair, Laser Treatment in Virar West | Dr. Priyanka Patil | COZPIRAA",
   description:
-    "Looking for the best dermatologist and cosmetologist in Virar? COZPIRAA Skin Clinic in Global City, Virar West provides expert treatment for acne, scars, melasma, hyperpigmentation, anti-aging & PRP hair fall by Dr. Priyanka Rahul Patil (BAMS, 9+ Yrs Exp). Book your consultation today!",
+    "Looking for expert skin, hair, laser treatment or cosmetology consultant in Virar? COZPIRAA Skin Clinic in Global City, Virar West provides expert treatment for acne, scars, melasma, hyperpigmentation, anti-aging & PRP hair fall by Dr. Priyanka Rahul Patil (BAMS, 10+ Yrs Exp). Book your consultation today!",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
     apple: "/images/latest.png",
   },
   keywords: [
-    "Best Dermatologist in Virar",
+    "Cosmetology Consultant in Virar",
     "Best Cosmetologist in Virar",
-    "Best Dermatologist in Virar West",
+    "Cosmetology Consultant in Virar West",
     "Best Cosmetologist in Virar West",
-    "Top Skin Doctor in Virar",
     "Skin Specialist Virar West",
+    "Skin Hair Laser Treatment Virar",
     "Cosmetology Clinic Virar West",
-    "Dr Priyanka Rahul Patil Dermatologist",
+    "Dr Priyanka Rahul Patil Cosmetologist",
     "Acne Treatment Virar West",
     "Acne Scar Treatment Virar",
     "Pigmentation Melasma Clinic Virar",
@@ -52,29 +52,29 @@ export const metadata: Metadata = {
     "Laser Hair Removal Virar",
     "Chemical Peels Virar West",
     "Skin Clinic Global City Virar West",
-    "Vasai Virar Dermatologist",
+    "Vasai Virar Skin and Laser Clinic",
     "Best Cosmetologist in Palghar",
     "Skin and Hair Clinic Virar",
   ],
   authors: [{ name: "Dr. Priyanka Rahul Patil", url: "https://cozpiraa.vercel.app" }],
-  creator: "COZPIRAA Dermatology & Cosmetology Clinic",
-  publisher: "COZPIRAA Dermatology & Cosmetology Clinic",
+  creator: "COZPIRAA Skin, Hair, Laser & Cosmetology Clinic",
+  publisher: "COZPIRAA Skin, Hair, Laser & Cosmetology Clinic",
   metadataBase: new URL("https://cozpiraa.vercel.app"),
   alternates: {
     canonical: "https://cozpiraa.vercel.app",
   },
   openGraph: {
-    title: "Best Dermatologist & Cosmetologist in Virar West | COZPIRAA Clinic",
+    title: "Best Cosmetology Consultant & Skin, Hair, Laser Treatment in Virar West | COZPIRAA Clinic",
     description:
-      "Ranked top skin clinic in Virar West. Expert dermatological care for acne, scars, melasma, pigmentation, laser cosmetology & hair regrowth by Dr. Priyanka Rahul Patil (BAMS).",
+      "Ranked top skin clinic in Virar West. Expert care for acne, scars, melasma, pigmentation, laser cosmetology & hair regrowth by Dr. Priyanka Rahul Patil (BAMS, 10+ Yrs Exp).",
     url: "https://cozpiraa.vercel.app",
-    siteName: "COZPIRAA Dermatology & Cosmetology Clinic Virar",
+    siteName: "COZPIRAA Skin, Hair, Laser & Cosmetology Clinic Virar",
     images: [
       {
         url: "/images/latest.png",
         width: 1200,
         height: 630,
-        alt: "COZPIRAA Dermatology & Cosmetology Clinic Virar West",
+        alt: "COZPIRAA Skin, Hair, Laser & Cosmetology Clinic Virar West",
       },
     ],
     locale: "en_IN",
@@ -82,9 +82,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Dermatologist & Cosmetologist in Virar West | Dr. Priyanka Patil",
+    title: "Best Cosmetology Consultant & Skin, Hair, Laser Treatment in Virar West | Dr. Priyanka Patil",
     description:
-      "Expert skin care, cosmetology, acne scar subcision, pigmentation treatment & hair therapy by Dr. Priyanka Rahul Patil (BAMS) in Virar West.",
+      "Expert skin care, cosmetology, acne scar subcision, pigmentation treatment & hair therapy by Dr. Priyanka Rahul Patil (BAMS, 10+ Yrs Exp) in Virar West.",
     images: ["/images/latest.png"],
   },
   other: {
@@ -120,8 +120,8 @@ export default function RootLayout({
       {
         "@type": ["MedicalClinic", "LocalBusiness", "HealthAndBeautyBusiness"],
         "@id": "https://cozpiraa.vercel.app/#clinic",
-        name: "COZPIRAA Dermatology & Cosmetology Clinic",
-        alternateName: "Best Dermatologist & Cosmetologist in Virar West - Dr. Priyanka Rahul Patil",
+        name: "COZPIRAA Skin, Hair, Laser & Cosmetology Clinic",
+        alternateName: "Best Cosmetology Consultant & Skin, Hair, Laser Specialist in Virar West - Dr. Priyanka Rahul Patil",
         url: "https://cozpiraa.vercel.app",
         telephone: "+91-72493-12567",
         email: "hello@cozpiraaclinic.com",
@@ -156,9 +156,9 @@ export default function RootLayout({
             closes: "20:00",
           },
         ],
-        medicalSpecialty: ["Dermatology", "CosmeticDermatology", "Trichology"],
+        medicalSpecialty: ["CosmeticTreatment", "Trichology", "LaserTreatment"],
         knowsAbout: [
-          "Clinical Dermatology",
+          "Skin, Hair & Laser Treatment",
           "Medical Cosmetology",
           "Acne Treatment",
           "Acne Scar Subcision",
@@ -180,9 +180,9 @@ export default function RootLayout({
         "@type": "Physician",
         "@id": "https://cozpiraa.vercel.app/#doctor",
         name: "Dr. Priyanka Rahul Patil",
-        jobTitle: "Lead Dermatologist & Cosmetologist",
-        medicalSpecialty: ["Dermatology", "CosmeticDermatology"],
-        description: "Dr. Priyanka Rahul Patil (BAMS) is a leading Dermatologist & Cosmetologist in Virar West with 9+ years of experience in clinical dermatology, medical cosmetology, and hair PRP therapy.",
+        jobTitle: "Cosmetology Consultant & Skin, Hair, Laser Specialist",
+        medicalSpecialty: ["CosmeticTreatment", "Trichology"],
+        description: "Dr. Priyanka Rahul Patil (BAMS) is a leading Cosmetology Consultant and Skin, Hair & Laser Specialist in Virar West with 10+ years of experience in medical cosmetology, laser aesthetic treatments, and hair PRP therapy.",
         worksFor: { "@id": "https://cozpiraa.vercel.app/#clinic" },
         address: {
           "@type": "PostalAddress",
@@ -196,15 +196,15 @@ export default function RootLayout({
         mainEntity: [
           {
             "@type": "Question",
-            name: "Who is the best dermatologist and cosmetologist in Virar West?",
+            name: "Who is the best Cosmetology Consultant & Skin, Hair, Laser specialist in Virar West?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Dr. Priyanka Rahul Patil (BAMS) at COZPIRAA Dermatology Clinic is widely recognized as one of the best dermatologists and cosmetologists in Virar West, bringing over 9 years of clinical practice in treating acne, acne scars, hyperpigmentation, melasma, anti-aging, and hair regrowth.",
+              text: "Dr. Priyanka Rahul Patil (BAMS) at COZPIRAA Skin, Hair & Laser Clinic is widely recognized as a leading Cosmetology Consultant in Virar West, bringing 10+ years of clinical experience in treating acne, acne scars, hyperpigmentation, melasma, anti-aging, laser treatments, and hair regrowth.",
             },
           },
           {
             "@type": "Question",
-            name: "Where is COZPIRAA Dermatology Clinic located in Virar?",
+            name: "Where is COZPIRAA Skin, Hair & Laser Clinic located in Virar?",
             acceptedAnswer: {
               "@type": "Answer",
               text: "COZPIRAA is located at Shop No. 32, Agarwal Lifestyle Avenue, C-3, Opp. Poonam Vista, Global City, Virar West, Maharashtra 401303.",
@@ -212,10 +212,10 @@ export default function RootLayout({
           },
           {
             "@type": "Question",
-            name: "What dermatology and cosmetology services are available at COZPIRAA Virar?",
+            name: "What skin, hair, laser, and cosmetology services are available at COZPIRAA Virar?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "COZPIRAA provides clinical dermatology and medical cosmetology services including acne control, scar microneedling & subcision, chemical peels, hyperpigmentation & melasma care, laser skin rejuvenation, anti-aging therapies, and PRP hair growth treatment.",
+              text: "COZPIRAA provides comprehensive clinical skin, hair, laser, and cosmetology treatments including acne control, scar microneedling & subcision, chemical peels, hyperpigmentation & melasma care, laser skin rejuvenation, anti-aging therapies, and PRP hair growth treatment.",
             },
           },
         ],
@@ -232,13 +232,13 @@ export default function RootLayout({
           {
             "@type": "ListItem",
             position: 2,
-            name: "Best Dermatologist in Virar West",
+            name: "Cosmetology Consultant in Virar West",
             item: "https://cozpiraa.vercel.app/#doctor",
           },
           {
             "@type": "ListItem",
             position: 3,
-            name: "Cosmetology Services Virar",
+            name: "Skin, Hair & Laser Services Virar",
             item: "https://cozpiraa.vercel.app/#services",
           },
         ],

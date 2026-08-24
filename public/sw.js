@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────
-//  COZPIRAA Dermatology Clinic — Service Worker (PWA)
+//  COZPIRAA Skin, Hair & Laser Clinic — Service Worker (PWA)
 // ─────────────────────────────────────────────────────────
 
 const CACHE_NAME = 'cozpiraa-cache-v2';

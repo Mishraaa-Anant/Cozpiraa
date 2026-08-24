@@ -100,7 +100,7 @@ export function CookieBanner() {
                   <ShieldCheck className="w-4 h-4 text-sage-600 inline" />
                 </h4>
                 <p className="text-xs text-charcoal-600 leading-relaxed">
-                  COZPIRAA Dermatology Clinic uses essential cookies for secure appointment bookings and optional analytical cookies to continuously improve patient experience.
+                  COZPIRAA Skin, Hair & Laser Clinic uses essential cookies for secure appointment bookings and optional analytical cookies to continuously improve patient experience.
                 </p>
               </div>
             </div>

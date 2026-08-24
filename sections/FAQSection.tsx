@@ -25,7 +25,7 @@ export function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-charcoal-600 text-base sm:text-lg leading-relaxed">
-            Essential information regarding your dermatology consultation, appointment booking, and clinic procedures.
+            Essential information regarding your skin and cosmetology consultation, appointment booking, and clinic procedures.
           </p>
         </div>
 

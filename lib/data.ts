@@ -10,16 +10,16 @@ import {
 
 export const DOCTOR_PROFILE: DoctorProfile = {
   name: "Dr. Priyanka Rahul Patil",
-  title: "Lead Dermatologist & Cosmetologist",
+  title: "Cosmetology Consultant | Skin, Hair & Laser Treatment",
   qualification: "BAMS",
-  experience: "9+ Years Clinical Dermatology & Cosmetology Practice",
-  bio: "Dr. Priyanka Rahul Patil is recognized as one of the best dermatologists and cosmetologists in Virar West, bringing over 9 years of clinical expertise in dermatology, medical cosmetology, trichology, and integrative skin health. Dedicated to patient-centric, evidence-based care, she evaluates the root factors behind every skin and scalp condition to design structured, highly personalized clinical treatment plans.",
+  experience: "10+ Years Clinical Cosmetology & Skin, Hair, Laser Practice",
+  bio: "Dr. Priyanka Rahul Patil is recognized as a leading Cosmetology Consultant and Skin, Hair & Laser specialist in Virar West, bringing over 10+ years of clinical expertise in medical cosmetology, trichology, laser aesthetics, and integrative skin health. Dedicated to patient-centric, evidence-based care, she evaluates the root factors behind every skin and scalp condition to design structured, highly personalized clinical treatment plans.",
   specialties: [
-    "Best Dermatologist in Virar West",
+    "Cosmetology Consultant in Virar West",
     "Medical & Clinical Cosmetology",
     "Acne & Scar Management",
     "Pigmentation & Melasma Care",
-    "Laser Dermatology & Rejuvenation",
+    "Skin, Hair & Laser Treatment",
     "Trichology & Hair Regrowth PRP",
     "Preventive Barrier Care",
   ],
@@ -40,7 +40,7 @@ export const SKIN_CONCERNS: SkinConcern[] = [
     explanation: "Acne occurs when hair follicles become clogged with oil, dead skin cells, and bacteria. It can range from mild papules and blackheads to painful cystic nodules requiring medical evaluation.",
     keyCharacteristics: ["Comedones & Papules", "Localized Inflammation", "Oil Gland Overactivity"],
     treatmentCategories: ["Topical Prescription Therapy", "Comedone Extraction", "Chemical Resurfacing"],
-    medicalDisclaimer: "Treatment recommendations are determined following a physical dermatological evaluation.",
+    medicalDisclaimer: "Treatment recommendations are determined following a physical skin evaluation and clinical consultation.",
   },
   {
     id: "acne-scars",
@@ -67,7 +67,7 @@ export const SKIN_CONCERNS: SkinConcern[] = [
     title: "Melasma",
     category: "Pigmentation",
     summary: "Symmetrical facial hyperpigmentation triggered by hormonal fluctuations and light exposure.",
-    explanation: "Melasma typically presents as brown or blue-gray patches on the cheeks, forehead, and upper lip. It requires gentle, controlled dermatological care to prevent rebound darkening.",
+    explanation: "Melasma typically presents as brown or blue-gray patches on the cheeks, forehead, and upper lip. It requires gentle, controlled clinical skin care to prevent rebound darkening.",
     keyCharacteristics: ["Symmetrical Pattern", "Hormonal Sensitivity", "Dermal & Epidermal Component"],
     treatmentCategories: ["Barrier Repair Protocols", "Gentle Chemical Exfoliation", "Oral/Topical Maintenance"],
     medicalDisclaimer: "Melasma requires ongoing maintenance and continuous UV broad-spectrum protection.",
@@ -80,7 +80,7 @@ export const SKIN_CONCERNS: SkinConcern[] = [
     explanation: "Individual dark spots are concentrated clusters of melanin. Identifying whether a mark is epidermal or dermal dictates the choice of clinical treatment.",
     keyCharacteristics: ["Discrete Spots", "Sun Damage Accumulation", "Post-Breakout Remnants"],
     treatmentCategories: ["Targeted Spot Peels", "Precision Laser Therapy", "Brightening Serums"],
-    medicalDisclaimer: "Early dermatological assessment ensures correct differentiation from dysplastic lesions.",
+    medicalDisclaimer: "Early clinical skin assessment ensures correct differentiation from dysplastic lesions.",
   },
   {
     id: "uneven-tone",
@@ -154,12 +154,12 @@ export const SKIN_CONCERNS: SkinConcern[] = [
   },
 ];
 
-export const DERMATOLOGY_SERVICES: ServiceItem[] = [
+export const CLINICAL_SERVICES: ServiceItem[] = [
   {
     id: "acne-management",
     title: "Acne Management",
     shortDesc: "Comprehensive clinical care to control active breakouts, soothe inflammation, and prevent long-term scarring.",
-    fullDesc: "Our medical acne care program evaluates hormonal, lifestyle, and dermatological causes of acne. By combining clinical topical therapies, gentle extractions, and anti-inflammatory care, we clear active lesions while shielding your skin from scar formation.",
+    fullDesc: "Our medical acne care program evaluates hormonal, lifestyle, and clinical skin causes of acne. By combining clinical topical therapies, gentle extractions, and anti-inflammatory care, we clear active lesions while shielding your skin from scar formation.",
     iconName: "Sparkles",
     keyBenefits: ["Clears Active Breakouts", "Reduces Redness & Inflammation", "Prevents Post-Acne Scars"],
     targetConcerns: ["Acne", "Oily Skin", "Dark Spots"],
@@ -206,8 +206,8 @@ export const DERMATOLOGY_SERVICES: ServiceItem[] = [
     overview: "Non-ablative, deeply soothing treatment focused on ceramide replenishment and barrier protection.",
   },
   {
-    id: "anti-ageing-dermatology",
-    title: "Anti-Ageing Dermatology",
+    id: "anti-ageing-treatment",
+    title: "Anti-Ageing Skin Care",
     shortDesc: "Evidence-based structural care to minimize fine lines, restore skin firmness, and support structural collagen.",
     fullDesc: "Ageing is a natural process that can be supported gracefully. Our clinical anti-ageing care focuses on preserving dermal density, promoting cellular repair, and softening early expressive lines.",
     iconName: "Clock",
@@ -226,8 +226,8 @@ export const DERMATOLOGY_SERVICES: ServiceItem[] = [
     overview: "Includes trichoscopy scalp evaluation, specialized scalp cleansing, and targeted PRP micro-administrations.",
   },
   {
-    id: "laser-dermatology",
-    title: "Laser Dermatology",
+    id: "laser-skin-hair-treatment",
+    title: "Laser Skin & Hair Treatment",
     shortDesc: "Precise light-based procedures for targeted skin resurfacing, pigmentation removal, and hair reduction.",
     fullDesc: "Utilizing precise laser technology, our clinical laser protocols safely address stubborn pigmentation, facial redness, micro-veins, and unwanted facial hair with minimal downtime.",
     iconName: "Target",
@@ -238,8 +238,8 @@ export const DERMATOLOGY_SERVICES: ServiceItem[] = [
   {
     id: "clinical-skin-treatments",
     title: "Clinical Skin Treatments",
-    shortDesc: "Customized dermatological procedures addressing specific skin conditions with clinical precision.",
-    fullDesc: "From specialized comedone management to medical-grade facial conditioning, our clinical treatments are tailored precisely to your immediate dermatological diagnosis.",
+    shortDesc: "Customized skin and cosmetology procedures addressing specific skin conditions with clinical precision.",
+    fullDesc: "From specialized comedone management to medical-grade facial conditioning, our clinical treatments are tailored precisely to your immediate skin consultation diagnosis.",
     iconName: "Stethoscope",
     keyBenefits: ["Physician-Guided Care", "Customized Formulation", "High Safety Profile"],
     targetConcerns: ["Acne", "Dry Skin", "Oily Skin"],
@@ -249,7 +249,7 @@ export const DERMATOLOGY_SERVICES: ServiceItem[] = [
     id: "preventive-skin-care",
     title: "Preventive Skin Care",
     shortDesc: "Proactive care strategies to protect skin health, prevent photo-damage, and maintain long-term results.",
-    fullDesc: "Preventive dermatology is the cornerstone of lifelong healthy skin. We guide patients in developing resilient daily routines, solar protection habits, and seasonal skincare adaptations.",
+    fullDesc: "Preventive skin care is the cornerstone of lifelong healthy skin. We guide patients in developing resilient daily routines, solar protection habits, and seasonal skincare adaptations.",
     iconName: "CheckCircle2",
     keyBenefits: ["Prevents Premature Photo-Aging", "Maintains Barrier Health", "Saves Time & Long-Term Effort"],
     targetConcerns: ["Fine Lines", "Uneven Skin Tone", "Sensitive Skin"],
@@ -257,13 +257,15 @@ export const DERMATOLOGY_SERVICES: ServiceItem[] = [
   },
 ];
 
+export const DERMATOLOGY_SERVICES = CLINICAL_SERVICES;
+
 export const PATIENT_JOURNEY: JourneyStep[] = [
   {
     step: "01",
     number: "01",
     title: "Consultation",
     shortDesc: "In-depth conversation exploring your skin history, lifestyle, current routine, and primary concerns.",
-    detailedDesc: "Your journey begins with a thorough 1-on-1 consultation with Dr. Priyanka. We review your dermatological history, previous treatments, diet, and daily routine without rushed judgments.",
+    detailedDesc: "Your journey begins with a thorough 1-on-1 consultation with Dr. Priyanka. We review your skin and hair history, previous treatments, diet, and daily routine without rushed judgments.",
     deliverables: ["History Mapping", "Routine Review", "Initial Concern Alignment"],
   },
   {
@@ -491,19 +493,19 @@ export const MYTHS_VS_FACTS: MythFact[] = [
 
 export const FAQS: FAQItem[] = [
   {
-    id: "faq-best-dermatologist-virar",
-    question: "Who is the best dermatologist and cosmetologist in Virar West?",
-    answer: "Dr. Priyanka Rahul Patil (BAMS) at COZPIRAA Dermatology Clinic is widely recognized as one of the best dermatologists and cosmetologists in Virar West, bringing over 9 years of clinical practice in treating acne, acne scars, hyperpigmentation, melasma, anti-aging, and hair regrowth.",
+    id: "faq-best-cosmetologist-virar",
+    question: "Who is the best Cosmetology Consultant & Skin, Hair, Laser specialist in Virar West?",
+    answer: "Dr. Priyanka Rahul Patil (BAMS) at COZPIRAA Skin, Hair & Laser Clinic is widely recognized as a leading Cosmetology Consultant in Virar West, bringing 10+ years of clinical experience in treating acne, acne scars, hyperpigmentation, melasma, anti-aging, laser treatments, and hair regrowth.",
   },
   {
     id: "faq-location-virar",
-    question: "Where is COZPIRAA Dermatology Clinic located in Virar?",
+    question: "Where is COZPIRAA Skin, Hair & Laser Clinic located in Virar?",
     answer: "COZPIRAA is located at Shop No. 32, Agarwal Lifestyle Avenue, C-3, Opp. Poonam Vista, Global City, Virar West, Maharashtra 401303. It serves patients across Virar West, Virar East, Bolinj, Arnala, Agashi, Nallasopara, and Vasai.",
   },
   {
     id: "faq-treatments-offered",
-    question: "What dermatology and cosmetology services are available at COZPIRAA Virar?",
-    answer: "COZPIRAA provides comprehensive clinical dermatology and cosmetology treatments including acne control, scar microneedling & subcision, chemical peels, hyperpigmentation & melasma care, laser skin rejuvenation, anti-aging therapies, and PRP hair growth treatment.",
+    question: "What skin, hair, laser, and cosmetology services are available at COZPIRAA Virar?",
+    answer: "COZPIRAA provides comprehensive clinical skin, hair, laser, and cosmetology treatments including acne control, scar microneedling & subcision, chemical peels, hyperpigmentation & melasma care, laser skin rejuvenation, anti-aging therapies, and PRP hair growth treatment.",
   },
   {
     id: "faq-1",
@@ -512,8 +514,8 @@ export const FAQS: FAQItem[] = [
   },
   {
     id: "faq-2",
-    question: "What happens during my first dermatology & cosmetology consultation?",
-    answer: "During your initial visit, Dr. Priyanka will conduct a detailed 1-on-1 evaluation of your skin concerns, medical history, lifestyle factors, and current skincare routine. You will receive an accurate diagnosis and a personalized care plan.",
+    question: "What happens during my first skin & cosmetology consultation?",
+    answer: "During your initial visit, Dr. Priyanka will conduct a detailed 1-on-1 evaluation of your skin concerns, medical history, lifestyle factors, and current skincare routine. You will receive an accurate assessment and a personalized care plan.",
   },
   {
     id: "faq-3",
@@ -523,7 +525,7 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq-4",
     question: "How is a treatment plan decided?",
-    answer: "Your treatment plan is developed based on a physical skin evaluation, your skin type, lifestyle, severity of concerns, and personal goals. We prioritize safe, evidence-based dermatological and cosmetological protocols.",
+    answer: "Your treatment plan is developed based on a physical skin evaluation, your skin type, lifestyle, severity of concerns, and personal goals. We prioritize safe, evidence-based skin, hair, and cosmetological protocols.",
   },
   {
     id: "faq-5",

@@ -15,7 +15,7 @@ import {
   ArrowRight,
   ChevronRight,
 } from "lucide-react";
-import { DERMATOLOGY_SERVICES } from "@/lib/data";
+import { CLINICAL_SERVICES } from "@/lib/data";
 import { ServiceItem } from "@/lib/types";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -59,16 +59,16 @@ export function ServicesSection() {
             Clinical Expertise
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-800 tracking-tight">
-            Comprehensive Dermatological Care
+            Comprehensive Skin, Hair & Laser Care
           </h2>
           <p className="text-charcoal-600 text-base sm:text-lg leading-relaxed">
-            Evidence-based skin, hair, and dermatological procedures conducted with medical precision and personalized care.
+            Evidence-based skin, hair, and laser treatment procedures conducted with medical precision and personalized care.
           </p>
         </div>
 
         {/* 10 Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {DERMATOLOGY_SERVICES.map((service) => {
+          {CLINICAL_SERVICES.map((service) => {
             const IconComponent = ICON_MAP[service.iconName] || Stethoscope;
             return (
               <Card
@@ -126,7 +126,7 @@ export function ServicesSection() {
         isOpen={!!activeModalService}
         onClose={() => setActiveModalService(null)}
         title={activeModalService?.title}
-        subtitle="Clinical Dermatology Overview"
+        subtitle="Clinical Skin & Laser Overview"
         maxWidth="lg"
       >
         {activeModalService && (

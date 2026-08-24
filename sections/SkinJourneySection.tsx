@@ -46,7 +46,7 @@ export function SkinJourneySection() {
             Interactive Skin Journey
           </h2>
           <p className="text-charcoal-600 text-base sm:text-lg leading-relaxed">
-            From initial consultation to long-term barrier protection, explore what to expect at every stage of your dermatological care.
+            From initial consultation to long-term barrier protection, explore what to expect at every stage of your skin and hair care.
           </p>
         </div>
 

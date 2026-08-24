@@ -19,7 +19,7 @@ export function MythFactSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <Badge variant="terracotta" icon={<Sparkles className="w-3.5 h-3.5" />}>
-            Dermatological Clarity
+            Skin Care Clarity
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-800 tracking-tight">
             Skin Myths vs Facts
@@ -65,7 +65,7 @@ export function MythFactSection() {
                         "{item.myth}"
                       </h3>
                       <p className="text-xs text-charcoal-500 italic pt-2">
-                        Click card to reveal the clinical dermatological fact.
+                        Click card to reveal the clinical skincare fact.
                       </p>
                     </div>
                   ) : (
@@ -73,7 +73,7 @@ export function MythFactSection() {
                     <div className="space-y-3 animate-in fade-in duration-200">
                       <div className="flex items-center gap-2 text-sage-700 text-xs font-bold uppercase tracking-wider">
                         <CheckCircle2 className="w-4 h-4 shrink-0" />
-                        <span>Clinical Dermatology Fact</span>
+                        <span>Clinical Skincare Fact</span>
                       </div>
                       <h3 className="text-base font-bold text-charcoal-800 leading-snug">
                         "{item.fact}"

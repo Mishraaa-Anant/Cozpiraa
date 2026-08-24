@@ -143,7 +143,7 @@ export function ContactSection() {
           {/* Right: Embedded Google Maps */}
           <div className="lg:col-span-7 h-full min-h-[400px] rounded-2xl overflow-hidden shadow-card border border-ivory-300 relative bg-ivory-100">
             <iframe
-              title="COZPIRAA Dermatology Clinic Location Google Map"
+              title="COZPIRAA Skin, Hair & Laser Clinic Location Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.2745985618726!2d72.79683121489867!3d19.46441578691127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9e4e8a2acd3%3A0x9bfa6a8f8d44b1a5!2sGlobal%20City%2C%20Virar%20West%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="100%"

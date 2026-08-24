@@ -48,11 +48,11 @@ export function HeroSection() {
               icon={<ShieldCheck className="w-4 h-4 text-sage-600" />}
               className="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider shadow-sm"
             >
-              Top-Rated Dermatologist & Cosmetologist in Virar West
+              Top-Rated Skin, Hair, Laser & Cosmetology Consultant in Virar West
             </Badge>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal-800 tracking-tight leading-[1.15]">
-              Leading Dermatology &{" "}
+              Leading Skin, Hair, Laser &{" "}
               <span className="text-sage-600 relative inline-block">
                 Cosmetology Clinic
                 <span className="absolute left-0 bottom-1 w-full h-2 bg-sage-200/50 -z-10 rounded-full" />
@@ -61,7 +61,7 @@ export function HeroSection() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl text-charcoal-600 font-normal leading-relaxed max-w-2xl">
-              Consult <strong className="text-charcoal-800 font-semibold">Dr. Priyanka Rahul Patil (BAMS)</strong> — Virar&apos;s trusted Dermatologist & Cosmetologist with 9+ years of clinical expertise in acne control, scar reduction, melasma care, laser cosmetology, and hair regrowth PRP.
+              Consult <strong className="text-charcoal-800 font-semibold">Dr. Priyanka Rahul Patil (BAMS)</strong> — Virar&apos;s trusted Cosmetology Consultant with 10+ years of clinical expertise in skin, hair, laser treatments, acne control, scar reduction, melasma care, and hair regrowth PRP.
             </p>
 
             {/* CTAs */}
@@ -111,7 +111,7 @@ export function HeroSection() {
                 <div className="aspect-[4/5] relative">
                   <Image
                     src="/images/doctor.jpg"
-                    alt="Dr. Priyanka Rahul Patil - Lead Dermatological Practitioner at COZPIRAA"
+                    alt="Dr. Priyanka Rahul Patil - Cosmetology Consultant & Skin, Hair, Laser Practitioner at COZPIRAA"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
@@ -131,12 +131,12 @@ export function HeroSection() {
                         Dr. Priyanka Rahul Patil
                       </h4>
                       <p className="text-[11px] text-charcoal-500 font-medium">
-                        BAMS · 9+ Years Practice
+                        BAMS · 10+ Years Practice
                       </p>
                     </div>
                   </div>
                   <Badge variant="sage" className="text-[10px] uppercase font-bold">
-                    Dermatology
+                    Skin & Laser
                   </Badge>
                 </div>
               </div>

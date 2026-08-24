@@ -405,7 +405,7 @@ export default function AdminPage() {
             </div>
             <div>
               <h1 className="text-lg font-bold text-charcoal-900 font-serif leading-tight">COZPIRAA Admin</h1>
-              <p className="text-xs text-charcoal-500">Dermatology & Cosmetology Appointment Manager</p>
+              <p className="text-xs text-charcoal-500">Skin, Hair, Laser & Cosmetology Appointment Manager</p>
             </div>
           </div>
 

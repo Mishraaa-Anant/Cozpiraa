@@ -35,13 +35,13 @@ export function DoctorSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <Badge variant="sage" icon={<Stethoscope className="w-3.5 h-3.5" />}>
-            Lead Dermatologist & Cosmetologist in Virar
+            Cosmetology Consultant & Skin, Hair, Laser Expert in Virar
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-800 tracking-tight">
-            Meet Virar&apos;s Trusted Dermatologist & Cosmetologist
+            Meet Virar&apos;s Trusted Cosmetology Consultant
           </h2>
           <p className="text-charcoal-600 text-base sm:text-lg leading-relaxed">
-            Dedicated clinical leadership by Dr. Priyanka Rahul Patil (BAMS), offering 9+ years of clinical dermatology, medical cosmetology, and personalized skin care in Virar West.
+            Dedicated clinical leadership by Dr. Priyanka Rahul Patil (BAMS), offering 10+ years of clinical experience in skin, hair, laser treatments, medical cosmetology, and personalized care in Virar West.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export function DoctorSection() {
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-card border border-ivory-300 bg-white">
                 <Image
                   src={DOCTOR_PROFILE.image}
-                  alt={`${DOCTOR_PROFILE.name} - COZPIRAA Dermatologist`}
+                  alt={`${DOCTOR_PROFILE.name} - COZPIRAA Cosmetology Consultant`}
                   fill
                   sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover object-top"
@@ -83,7 +83,7 @@ export function DoctorSection() {
                     {DOCTOR_PROFILE.qualification} Qualified
                   </Badge>
                   <Badge variant="sage" className="text-[11px] uppercase font-bold">
-                    Clinical Dermatology
+                    Skin, Hair & Laser
                   </Badge>
                 </div>
                 <h3 className="text-3xl sm:text-4xl font-bold text-charcoal-800 tracking-tight">

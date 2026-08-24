@@ -8,21 +8,21 @@ import { Badge } from "@/components/ui/Badge";
 const GALLERY_ITEMS = [
   {
     src: "/images/clinic.png",
-    alt: "COZPIRAA Dermatology Clinic Interior",
+    alt: "COZPIRAA Skin & Laser Clinic Interior",
     title: "Clinical Environment",
     subtitle: "Modern & Hygienic Facility",
     span: "col-span-1 md:col-span-2 row-span-2",
   },
   {
     src: "/images/doctor.jpg",
-    alt: "Dr. Priyanka Rahul Patil - COZPIRAA Lead Practitioner",
-    title: "Dermatological Practitioner",
+    alt: "Dr. Priyanka Rahul Patil - COZPIRAA Cosmetology Consultant",
+    title: "Cosmetology Practitioner",
     subtitle: "Dr. Priyanka Rahul Patil (BAMS)",
     span: "col-span-1 row-span-1",
   },
   {
     src: "/images/doctor.png",
-    alt: "COZPIRAA Dermatologist Consultation",
+    alt: "COZPIRAA Skin & Laser Consultation",
     title: "Patient Consultation",
     subtitle: "1-on-1 Personalized Care",
     span: "col-span-1 row-span-1",
@@ -42,7 +42,7 @@ export function GallerySection() {
             Our Clinical Facility & Atmosphere
           </h2>
           <p className="text-charcoal-600 text-base sm:text-lg leading-relaxed">
-            Designed for patient comfort, medical cleanliness, and comprehensive dermatological care.
+            Designed for patient comfort, medical cleanliness, and comprehensive skin and hair care.
           </p>
         </div>
 

@@ -17,12 +17,12 @@ import { Button } from "@/components/ui/Button";
 const CLINIC_HIGHLIGHTS = [
   {
     title: "Personalized Care",
-    desc: "Tailored dermatological protocols matched to your specific skin architecture and lifestyle.",
+    desc: "Tailored skin, hair, and cosmetology protocols matched to your specific skin architecture and lifestyle.",
     icon: Heart,
   },
   {
     title: "Professional Guidance",
-    desc: "Physician-guided treatments backed by evidence-based dermatological science.",
+    desc: "Physician-guided treatments backed by evidence-based aesthetic and skin science.",
     icon: ShieldCheck,
   },
   {
@@ -70,7 +70,7 @@ export function AboutSection() {
               <div className="aspect-[4/3] relative">
                 <Image
                   src="/images/clinic.png"
-                  alt="COZPIRAA Dermatology Clinic Interior - Virar West"
+                  alt="COZPIRAA Skin & Laser Clinic Interior - Virar West"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -79,7 +79,7 @@ export function AboutSection() {
 
               <div className="p-6 bg-gradient-to-r from-sage-800 to-sage-900 text-white flex items-center justify-between">
                 <div>
-                  <h4 className="font-bold text-base">Modern Dermatology Facility</h4>
+                  <h4 className="font-bold text-base">Modern Skin & Cosmetology Facility</h4>
                   <p className="text-xs text-sage-200">Global City, Virar West, Maharashtra</p>
                 </div>
                 <Badge variant="terracotta" className="text-xs font-bold uppercase">
@@ -98,15 +98,15 @@ export function AboutSection() {
             className="lg:col-span-6 space-y-6"
           >
             <Badge variant="sage" icon={<ShieldCheck className="w-3.5 h-3.5" />}>
-              About COZPIRAA Dermatology & Cosmetology
+              About COZPIRAA Skin, Hair & Laser Clinic
             </Badge>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-800 tracking-tight leading-tight">
-              Virar&apos;s Premier Dermatology & Medical Cosmetology Center
+              Virar&apos;s Premier Skin, Hair, Laser & Medical Cosmetology Center
             </h2>
 
             <p className="text-charcoal-600 text-base sm:text-lg leading-relaxed">
-              Located in Global City, Virar West, COZPIRAA is dedicated to delivering evidence-based clinical dermatology, medical cosmetology, and trichology. Guided by <strong className="text-charcoal-800 font-semibold">Dr. Priyanka Rahul Patil (BAMS)</strong>, we provide personalized care tailored to your unique skin architecture.
+              Located in Global City, Virar West, COZPIRAA is dedicated to delivering evidence-based clinical skin care, medical cosmetology, laser treatments, and trichology. Guided by <strong className="text-charcoal-800 font-semibold">Dr. Priyanka Rahul Patil (BAMS)</strong> with 10+ years of experience, we provide personalized care tailored to your unique skin architecture.
             </p>
 
             {/* Highlights Grid */}

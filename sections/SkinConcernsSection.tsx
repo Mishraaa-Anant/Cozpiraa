@@ -42,7 +42,7 @@ export function SkinConcernsSection() {
             Understand Your Skin Concern
           </h2>
           <p className="text-charcoal-600 text-base sm:text-lg leading-relaxed">
-            Select a skin or scalp concern below to view clinical characteristics, common causes, and recommended dermatological care categories.
+            Select a skin or scalp concern below to view clinical characteristics, common causes, and recommended care categories.
           </p>
         </div>
 
@@ -164,7 +164,7 @@ export function SkinConcernsSection() {
                       rightIcon={<ArrowRight className="w-4 h-4" />}
                       onClick={scrollToAppointment}
                     >
-                      Discuss This With A Dermatologist
+                      Discuss This With Our Cosmetology Consultant
                     </Button>
                   </div>
                 </Card>

@@ -174,7 +174,7 @@ export function AppointmentSection() {
             Instant Online Booking
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-charcoal-800 tracking-tight font-serif">
-            Book Your Dermatology Consultation
+            Book Your Skin, Hair & Laser Consultation
           </h2>
           <p className="text-charcoal-600 text-base leading-relaxed">
             Fill in your patient details to confirm your slot directly with Dr. Priyanka Rahul Patil at COZPIRAA Clinic, Virar West.
