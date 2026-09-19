@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
-import { ExperienceSwitcher } from "@/components/experience/ExperienceSwitcher";
 
 const PRODUCT_PILLARS = [
   {
@@ -44,7 +43,7 @@ export function ShopHeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-[92vh] pt-28 pb-16 md:pt-36 md:pb-24 flex items-center bg-gradient-to-b from-ivory-100 via-ivory-50 to-white overflow-hidden border-b border-ivory-200/60"
+      className="relative min-h-[90vh] pt-36 pb-16 md:pt-40 md:pb-24 flex items-center bg-gradient-to-b from-ivory-100 via-ivory-50 to-white overflow-hidden border-b border-ivory-200/60"
     >
       {/* Background Decorative Circles — mirrored from HeroSection */}
       <div
@@ -57,16 +56,6 @@ export function ShopHeroSection() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        {/* Switcher — centred above the hero grid */}
-        <motion.div
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="flex justify-center mb-10 md:mb-12"
-        >
-          <ExperienceSwitcher />
-        </motion.div>
-
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column Text */}
           <motion.div

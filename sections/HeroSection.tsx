@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { Calendar, Sparkles, ShieldCheck, ChevronDown, Award } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
-import { ExperienceSwitcher } from "@/components/experience/ExperienceSwitcher";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -23,7 +22,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-[92vh] pt-28 pb-16 md:pt-36 md:pb-24 flex items-center bg-gradient-to-b from-ivory-100 via-ivory-50 to-white overflow-hidden border-b border-ivory-200/60"
+      className="relative min-h-[90vh] pt-36 pb-16 md:pt-40 md:pb-24 flex items-center bg-gradient-to-b from-ivory-100 via-ivory-50 to-white overflow-hidden border-b border-ivory-200/60"
     >
       {/* Background Decorative Circles */}
       <div
@@ -36,16 +35,6 @@ export function HeroSection() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        {/* Experience Mode Switcher */}
-        <motion.div
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="flex justify-center mb-10 md:mb-12"
-        >
-          <ExperienceSwitcher />
-        </motion.div>
-
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column Text */}
           <motion.div
@@ -107,13 +96,8 @@ export function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Right Column Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-5 relative"
-          >
+          {/* Right Column Image — unblocked LCP rendering */}
+          <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Outer decorative ring */}
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-sage-200/40 via-ivory-200 to-terracotta-200/30 blur-lg -z-10" />
@@ -121,12 +105,14 @@ export function HeroSection() {
               <div className="relative rounded-2xl overflow-hidden shadow-elevation border border-ivory-300 bg-white group">
                 <div className="aspect-[4/5] relative">
                   <Image
-                    src="/images/doctor.jpg"
+                    src="/images/doctor.webp"
                     alt="Dr. Priyanka Rahul Patil - Cosmetology Consultant & Skin, Hair, Laser Practitioner at COZPIRAA"
                     fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 440px"
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     priority
+                    fetchPriority="high"
+                    loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 via-transparent to-transparent opacity-80" />
                 </div>
@@ -152,7 +138,7 @@ export function HeroSection() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 

@@ -9,6 +9,7 @@ const PRECACHE_ASSETS = [
   '/appointment',
   '/manifest.json',
   '/images/latest.png',
+  '/images/doctor.webp',
   '/images/doctor.jpg'
 ];
 

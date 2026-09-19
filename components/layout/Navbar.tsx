@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, Menu, X, ShieldCheck, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { useExperience } from "@/components/experience/ExperienceContext";
+import { ExperienceSwitcher } from "@/components/experience/ExperienceSwitcher";
 
 const NAV_LINKS = [
   { name: "Home", href: "#home" },
@@ -56,7 +57,7 @@ export function Navbar() {
         if (element) {
           const rect = element.getBoundingClientRect();
           const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          const offsetTop = rect.top + scrollTop - 80;
+          const offsetTop = rect.top + scrollTop - 116;
           window.scrollTo({
             top: offsetTop,
             behavior: "smooth",
@@ -80,7 +81,7 @@ export function Navbar() {
         if (element) {
           const rect = element.getBoundingClientRect();
           const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          const offsetTop = rect.top + scrollTop - 80;
+          const offsetTop = rect.top + scrollTop - 116;
           window.scrollTo({
             top: offsetTop,
             behavior: "smooth",
@@ -95,12 +96,13 @@ export function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/90 backdrop-blur-md shadow-clinical py-3 border-b border-ivory-300/60"
-            : "bg-ivory-100/60 backdrop-blur-sm py-5"
+            ? "bg-white/95 backdrop-blur-md shadow-clinical border-b border-ivory-300/70"
+            : "bg-ivory-100/95 backdrop-blur-md border-b border-ivory-300/50"
         }`}
       >
+        {/* Tier 1: Main Header Row */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between py-2.5 sm:py-3.5">
             {/* Logo */}
             <Link
               href="/"
@@ -108,9 +110,9 @@ export function Navbar() {
                 e.preventDefault();
                 scrollToSection("#home");
               }}
-              className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-sage-600 rounded-lg p-1"
+              className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus:ring-2 focus:ring-sage-600 rounded-lg p-1"
             >
-              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm border border-sage-600/20 bg-white p-1 group-hover:scale-105 transition-transform">
+              <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden shadow-sm border border-sage-600/20 bg-white p-1 group-hover:scale-105 transition-transform">
                 <Image
                   src="/images/latest.png"
                   alt="COZPIRAA Skin, Hair & Laser Clinic"
@@ -120,11 +122,11 @@ export function Navbar() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="font-bold text-xl tracking-tight text-charcoal-800 flex items-center gap-1">
+                <span className="font-bold text-lg sm:text-xl tracking-tight text-charcoal-800 flex items-center gap-1">
                   COZPIRAA
-                  <ShieldCheck className="w-4 h-4 text-sage-600 inline" />
+                  <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-sage-600 inline" />
                 </span>
-                <span className="text-[10px] uppercase font-semibold text-sage-700 tracking-widest -mt-1">
+                <span className="text-[9px] sm:text-[10px] uppercase font-semibold text-sage-700 tracking-widest -mt-1">
                   Skin, Hair & Laser Clinic
                 </span>
               </div>
@@ -140,7 +142,7 @@ export function Navbar() {
                     e.preventDefault();
                     scrollToSection(link.href);
                   }}
-                  className="px-3.5 py-2 text-sm font-medium text-charcoal-700 hover:text-sage-700 hover:bg-sage-50/60 rounded-lg transition-colors"
+                  className="px-3.5 py-1.5 text-sm font-medium text-charcoal-700 hover:text-sage-700 hover:bg-sage-50/60 rounded-lg transition-colors"
                 >
                   {link.name}
                 </a>
@@ -157,7 +159,7 @@ export function Navbar() {
                   onClick={() => {
                     const el = document.querySelector("#shop-content");
                     if (el) {
-                      const offsetTop = el.getBoundingClientRect().top + window.pageYOffset - 80;
+                      const offsetTop = el.getBoundingClientRect().top + window.pageYOffset - 116;
                       window.scrollTo({ top: offsetTop, behavior: "smooth" });
                     }
                   }}
@@ -180,12 +182,19 @@ export function Navbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen((prev) => !prev)}
-              className="lg:hidden p-2.5 rounded-xl text-charcoal-800 hover:bg-ivory-200 active:bg-ivory-300 transition-colors focus:outline-none focus:ring-2 focus:ring-sage-600 touch-manipulation"
+              className="lg:hidden p-2 rounded-xl text-charcoal-800 hover:bg-ivory-200 active:bg-ivory-300 transition-colors focus:outline-none focus:ring-2 focus:ring-sage-600 touch-manipulation"
               aria-label="Toggle navigation menu"
               aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
+          </div>
+        </div>
+
+        {/* Tier 2: Primary Navigation Switch (Consultation | Shop) */}
+        <div className="border-t border-ivory-200/80 bg-white/70 backdrop-blur-md">
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <ExperienceSwitcher />
           </div>
         </div>
 
