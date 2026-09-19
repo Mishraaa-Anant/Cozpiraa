@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Calendar, Sparkles, ShieldCheck, ChevronDown, Award } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
+import { ExperienceSwitcher } from "@/components/experience/ExperienceSwitcher";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -35,6 +36,16 @@ export function HeroSection() {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        {/* Experience Mode Switcher */}
+        <motion.div
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          className="flex justify-center mb-10 md:mb-12"
+        >
+          <ExperienceSwitcher />
+        </motion.div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column Text */}
           <motion.div

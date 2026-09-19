@@ -5,8 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Calendar, Menu, X, ShieldCheck } from "lucide-react";
+import { Calendar, Menu, X, ShieldCheck, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { useExperience } from "@/components/experience/ExperienceContext";
 
 const NAV_LINKS = [
   { name: "Home", href: "#home" },
@@ -23,6 +24,7 @@ export function Navbar() {
   const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { isShop } = useExperience();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -147,14 +149,31 @@ export function Navbar() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center">
-              <Button
-                variant="primary"
-                size="md"
-                leftIcon={<Calendar className="w-4 h-4" />}
-                onClick={() => scrollToSection("#appointment")}
-              >
-                Book Consultation
-              </Button>
+              {isShop ? (
+                <Button
+                  variant="primary"
+                  size="md"
+                  leftIcon={<ShoppingBag className="w-4 h-4" />}
+                  onClick={() => {
+                    const el = document.querySelector("#shop-content");
+                    if (el) {
+                      const offsetTop = el.getBoundingClientRect().top + window.pageYOffset - 80;
+                      window.scrollTo({ top: offsetTop, behavior: "smooth" });
+                    }
+                  }}
+                >
+                  Browse Shop
+                </Button>
+              ) : (
+                <Button
+                  variant="primary"
+                  size="md"
+                  leftIcon={<Calendar className="w-4 h-4" />}
+                  onClick={() => scrollToSection("#appointment")}
+                >
+                  Book Consultation
+                </Button>
+              )}
             </div>
 
             {/* Mobile Hamburger Button */}
@@ -192,15 +211,36 @@ export function Navbar() {
                   </button>
                 ))}
                 <div className="pt-4 px-2">
-                  <Button
-                    variant="primary"
-                    size="lg"
-                    className="w-full justify-center shadow-md py-3.5 text-base font-semibold"
-                    leftIcon={<Calendar className="w-5 h-5" />}
-                    onClick={() => scrollToSection("#appointment")}
-                  >
-                    Book Consultation
-                  </Button>
+                  {isShop ? (
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      className="w-full justify-center shadow-md py-3.5 text-base font-semibold"
+                      leftIcon={<ShoppingBag className="w-5 h-5" />}
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        setTimeout(() => {
+                          const el = document.querySelector("#shop-content");
+                          if (el) {
+                            const offsetTop = el.getBoundingClientRect().top + window.pageYOffset - 80;
+                            window.scrollTo({ top: offsetTop, behavior: "smooth" });
+                          }
+                        }, 150);
+                      }}
+                    >
+                      Browse Shop
+                    </Button>
+                  ) : (
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      className="w-full justify-center shadow-md py-3.5 text-base font-semibold"
+                      leftIcon={<Calendar className="w-5 h-5" />}
+                      onClick={() => scrollToSection("#appointment")}
+                    >
+                      Book Consultation
+                    </Button>
+                  )}
                 </div>
               </div>
             </motion.div>
